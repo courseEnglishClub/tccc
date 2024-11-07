@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Famous Places of the World</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Famous Places of the World</h1>
+  </header>
+  <div class="container">
+    <h2>O que são Locais Famosos?</h2>
+    <p>Locais famosos são destinos conhecidos mundialmente, seja por sua beleza natural, importância histórica ou cultural. Eles atraem turistas e são símbolos de suas respectivas regiões.</p>
+
+    <h2>Locais Famosos ao Redor do Mundo</h2>
+    <table>
+      <tr>
+        <th>Local (Place)</th>
+        <th>Descrição</th>
+        <th>País</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Great Wall of China (Grande Muralha da China)</td>
+        <td>Uma das maiores construções do mundo, símbolo da China.</td>
+        <td>China</td>
+        <td><button onclick="toggleInfo('muralhaInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Eiffel Tower (Torre Eiffel)</td>
+        <td>Ícone de Paris, famosa por sua arquitetura e vista deslumbrante.</td>
+        <td>França</td>
+        <td><button onclick="toggleInfo('eiffelInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Machu Picchu</td>
+        <td>Cidade inca antiga localizada nas montanhas do Peru.</td>
+        <td>Peru</td>
+        <td><button onclick="toggleInfo('machuPicchuInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Statue of Liberty (Estátua da Liberdade)</td>
+        <td>Um símbolo de liberdade e amizade entre os povos.</td>
+        <td>Estados Unidos</td>
+        <td><button onclick="toggleInfo('liberdadeInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Colosseum (Coliseu)</td>
+        <td>Antigo anfiteatro romano, famoso por suas batalhas de gladiadores.</td>
+        <td>Itália</td>
+        <td><button onclick="toggleInfo('coliseuInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Petronas Towers (Torres Petronas)</td>
+        <td>Duas torres gêmeas em Kuala Lumpur, símbolo da modernidade malaia.</td>
+        <td>Malásia</td>
+        <td><button onclick="toggleInfo('petronasInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Sagrada Familia (Sagrada Família)</td>
+        <td>Basílica famosa em Barcelona, projetada por Antoni Gaudí.</td>
+        <td>Espanha</td>
+        <td><button onclick="toggleInfo('sagradaFamiliaInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Angkor Wat</td>
+        <td>Complexo de templos em Camboja, famoso por sua arquitetura Khmer.</td>
+        <td>Camboja</td>
+        <td><button onclick="toggleInfo('angkorWatInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Pyramids of Giza (Pirâmides de Gizé)</td>
+        <td>Um dos mais impressionantes monumentos da civilização egípcia.</td>
+        <td>Egito</td>
+        <td><button onclick="toggleInfo('piramidesInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Big Ben</td>
+        <td>Ícone de Londres, famoso pelo seu grande relógio.</td>
+        <td>Reino Unido</td>
+        <td><button onclick="toggleInfo('bigBenInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Christ the Redeemer (Cristo Redentor)</td>
+        <td>Estátua gigante de Jesus Cristo no Rio de Janeiro, Brasil.</td>
+        <td>Brasil</td>
+        <td><button onclick="toggleInfo('cristoInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Mount Fuji (Monte Fuji)</td>
+        <td>Um icônico vulcão e a montanha mais alta do Japão.</td>
+        <td>Japão</td>
+        <td><button onclick="toggleInfo('fujiInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="muralhaInfo" class="info">A Grande Muralha da China foi construída para proteger o Império Chinês de invasões e se estende por milhares de quilômetros, sendo um Patrimônio Mundial da UNESCO.</div>
+    <div id="eiffelInfo" class="info">A Torre Eiffel foi concluída em 1889 e é um dos monumentos mais visitados do mundo, oferecendo uma vista panorâmica de Paris.</div>
+    <div id="machuPicchuInfo" class="info">Machu Picchu, construído no século XV, é um exemplo impressionante da arquitetura inca e é Patrimônio Mundial da UNESCO.</div>
+    <div id="liberdadeInfo" class="info">A Estátua da Liberdade foi um presente da França para os Estados Unidos e simboliza a liberdade e a democracia.</div>
+    <div id="coliseuInfo" class="info">O Coliseu foi usado para gladiadores e eventos públicos, podendo acomodar até 80.000 espectadores.</div>
+    <div id="petronasInfo" class="info">As Torres Petronas, concluídas em 1998, são as torres gêmeas mais altas do mundo e oferecem um deck de observação incrível.</div>
+    <div id="sagradaFamiliaInfo" class="info">A Sagrada Família é uma obra inacabada e famosa pela sua arquitetura única, atraindo milhões de visitantes todos os anos.</div>
+    <div id="angkorWatInfo" class="info">Angkor Wat é o maior complexo religioso do mundo e um símbolo da cultura cambojana.</div>
+    <div id="piramidesInfo" class="info">As Pirâmides de Gizé são uma das Sete Maravilhas do Mundo Antigo e continuam a fascinar arqueólogos e turistas.</div>
+    <div id="bigBenInfo" class="info">Big Ben é o nome popular do Grande Relógio da Torre do Palácio de Westminster, em Londres.</div>
+    <div id="cristoInfo" class="info">A estátua do Cristo Redentor é uma das Novas Sete Maravilhas do Mundo e oferece uma vista impressionante da cidade.</div>
+    <div id="fujiInfo" class="info">O Monte Fuji é um importante símbolo cultural e espiritual do Japão, famoso por sua simetria e beleza.</div>
+
+    <h2>Dicas para Explorar Locais Famosos</h2>
+    <ul>
+      <li>Pesquise sobre a história e a cultura do local antes de visitá-lo.</li>
+      <li>Considere visitar em horários menos movimentados para aproveitar melhor a experiência.</li>
+      <li>Não se esqueça de tirar fotos e registrar suas experiências!</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

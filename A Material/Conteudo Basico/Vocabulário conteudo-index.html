@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulário em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Vocabulário em Inglês</h1>
+        <p>Aprenda palavras e frases úteis!</p>
+    </header>
+    <div class="container">
+        <h2>Vocabulário Básico</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Termo em Inglês</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hello</td>
+                    <td>Olá</td>
+                    <td>Hello, how are you? (Olá, como você está?)</td>
+                    <td><button onclick="toggleInfo('helloInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Thank you</td>
+                    <td>Obrigado(a)</td>
+                    <td>Thank you for your help. (Obrigado pela sua ajuda.)</td>
+                    <td><button onclick="toggleInfo('thankYouInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Please</td>
+                    <td>Por favor</td>
+                    <td>Can you help me, please? (Você pode me ajudar, por favor?)</td>
+                    <td><button onclick="toggleInfo('pleaseInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Goodbye</td>
+                    <td>Adeus</td>
+                    <td>Goodbye! See you later. (Adeus! Até mais.)</td>
+                    <td><button onclick="toggleInfo('goodbyeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Yes</td>
+                    <td>Sim</td>
+                    <td>Yes, I would like that. (Sim, eu gostaria disso.)</td>
+                    <td><button onclick="toggleInfo('yesInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>Não</td>
+                    <td>No, thank you. (Não, obrigado.)</td>
+                    <td><button onclick="toggleInfo('noInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Excuse me</td>
+                    <td>Com licença</td>
+                    <td>Excuse me, where is the bathroom? (Com licença, onde fica o banheiro?)</td>
+                    <td><button onclick="toggleInfo('excuseMeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Sorry</td>
+                    <td>Desculpe</td>
+                    <td>I'm sorry for the mistake. (Desculpe pelo erro.)</td>
+                    <td><button onclick="toggleInfo('sorryInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Help</td>
+                    <td>Ajudar</td>
+                    <td>I need help with this. (Eu preciso de ajuda com isso.)</td>
+                    <td><button onclick="toggleInfo('helpInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>Água</td>
+                    <td>Can I have some water, please? (Posso ter um pouco de água, por favor?)</td>
+                    <td><button onclick="toggleInfo('waterInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="helloInfo" class="info">Usado para cumprimentar alguém.</div>
+        <div id="thankYouInfo" class="info">Expressa gratidão.</div>
+        <div id="pleaseInfo" class="info">Usado para fazer pedidos educados.</div>
+        <div id="goodbyeInfo" class="info">Usado para se despedir.</div>
+        <div id="yesInfo" class="info">Confirmação ou assentimento.</div>
+        <div id="noInfo" class="info">Negação ou recusa.</div>
+        <div id="excuseMeInfo" class="info">Usado para chamar a atenção de alguém.</div>
+        <div id="sorryInfo" class="info">Usado para se desculpar.</div>
+        <div id="helpInfo" class="info">Pedido de assistência.</div>
+        <div id="waterInfo" class="info">Solicitação de água.</div>
+
+        <h2>Dicas para Aprender Vocabulário</h2>
+        <ul>
+            <li>Pratique usando as palavras em frases do dia a dia.</li>
+            <li>Crie cartões de memória para ajudar na memorização.</li>
+            <li>Ouça músicas ou assista a filmes em inglês para ver as palavras em contexto.</li>
+            <li>Tente falar em inglês sempre que possível!</li>
+        </ul>
+    </div>
+
+<footer>
+  <br>
+  <center><a href="Nivel Basico-index.html">
+    <button>Voltar</button>
+  </a></center>
+    <br>
+  
+</footer>
+</body>
+</html>

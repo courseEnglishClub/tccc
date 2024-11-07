@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumprimentos em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        header {
+            background-color: #60338a; /* Mantendo a cor original */
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a; /* Mantendo a cor original */
+            border-bottom: 2px solid #60338a; /* Mantendo a cor original */
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a; /* Mantendo a cor original */
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a; /* Mantendo a cor original */
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0; /* Cor suave ao passar o mouse */
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a; /* Mantendo a cor original */
+            border-radius: 5px;
+            animation: slideIn 0.5s;
+        }
+        .tips {
+            margin-top: 2em;
+            background-color: #e7f0ff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a; /* Mantendo a cor original */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68; /* Um tom mais escuro ao passar o mouse */
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cumprimentos em Inglês</h1>
+        <p>Aprenda a cumprimentar em inglês de forma eficaz!</p>
+    </header>
+    <div class="container">
+        <h2>Cumprimentos Comuns</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cumprimento</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hello</td>
+                    <td>Olá</td>
+                    <td>Hello! How are you?</td>
+                    <td><button onclick="toggleInfo('helloInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Good Morning</td>
+                    <td>Bom Dia</td>
+                    <td>Good morning! Have a great day!</td>
+                    <td><button onclick="toggleInfo('morningInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Good Afternoon</td>
+                    <td>Boa Tarde</td>
+                    <td>Good afternoon! How was your day?</td>
+                    <td><button onclick="toggleInfo('afternoonInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Good Evening</td>
+                    <td>Boa Noite</td>
+                    <td>Good evening! Nice to see you!</td>
+                    <td><button onclick="toggleInfo('eveningInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Good Night</td>
+                    <td>Boa Noite (despedida)</td>
+                    <td>Good night! Sleep well!</td>
+                    <td><button onclick="toggleInfo('nightInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Como você está?</td>
+                    <td>How are you doing today?</td>
+                    <td><button onclick="toggleInfo('howAreYouInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>What's up?</td>
+                    <td>Qual é a boa?</td>
+                    <td>Hey! What's up?</td>
+                    <td><button onclick="toggleInfo('whatsUpInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Hi</td>
+                    <td>Oi</td>
+                    <td>Hi there! How have you been?</td>
+                    <td><button onclick="toggleInfo('hiInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="helloInfo" class="info">Usado como um cumprimento geral e amigável.</div>
+        <div id="morningInfo" class="info">Cumprimento usado pela manhã até cerca de meio-dia.</div>
+        <div id="afternoonInfo" class="info">Usado entre o meio-dia e o início da noite.</div>
+        <div id="eveningInfo" class="info">Cumprimento usado a partir do final da tarde.</div>
+        <div id="nightInfo" class="info">Despedida usada à noite, ao se despedir de alguém.</div>
+        <div id="howAreYouInfo" class="info">Uma maneira comum de perguntar sobre o bem-estar de alguém.</div>
+        <div id="whatsUpInfo" class="info">Informal e usado entre amigos para saber como está a vida.</div>
+        <div id="hiInfo" class="info">Um cumprimento casual e amigável.</div>
+
+        <h2>Cumprimentos Avançados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cumprimento</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>How have you been?</td>
+                    <td>Como você tem estado?</td>
+                    <td>How have you been since we last met?</td>
+                    <td><button onclick="toggleInfo('beenInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>It’s a pleasure to meet you</td>
+                    <td>É um prazer conhecê-lo</td>
+                    <td>It’s a pleasure to meet you at last!</td>
+                    <td><button onclick="toggleInfo('pleasureInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Long time no see</td>
+                    <td>Há quanto tempo!</td>
+                    <td>Long time no see! How have you been?</td>
+                    <td><button onclick="toggleInfo('longTimeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>What brings you here?</td>
+                    <td>O que te traz aqui?</td>
+                    <td>What brings you here today?</td>
+                    <td><button onclick="toggleInfo('bringsInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>How's everything going?</td>
+                    <td>Como estão as coisas?</td>
+                    <td>How's everything going with your project?</td>
+                    <td><button onclick="toggleInfo('everythingInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="beenInfo" class="info">Uma pergunta mais pessoal sobre o estado atual de alguém.</div>
+        <div id="pleasureInfo" class="info">Usado em situações formais para expressar satisfação em conhecer alguém.</div>
+        <div id="longTimeInfo" class="info">Um cumprimento amigável usado quando se reencontra alguém.</div>
+        <div id="bringsInfo" class="info">Uma pergunta para saber o motivo da visita de alguém.</div>
+        <div id="everythingInfo" class="info">Uma maneira amigável de perguntar sobre a situação de alguém.</div>
+
+        <h2>Dicas para Cumprimentos</h2>
+        <div class="tips">
+            <ul>
+                <li>Use "Good morning" até o meio-dia e "Good evening" a partir das 5 da tarde.</li>
+                <li>Responda a "How are you?" com "I’m fine, thank you!" para ser educado.</li>
+                <li>Ao cumprimentar alguém pela primeira vez, um simples "Hello" é sempre adequado.</li>
+                <li>Pratique cumprimentos em diferentes contextos para se sentir mais confortável.</li>
+                <li>Use cumprimentos informais como "Hi" ou "What's up?" com amigos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <br>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+        <br>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

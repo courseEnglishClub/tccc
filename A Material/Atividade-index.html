@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<div class="cards-container">
+  <div class="owl-carousel owl-carousel1 owl-theme">
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="https://pngimg.com/d/number1_PNG14891.png" alt="">
+        <div class="card-body">
+           <a href="Exercicio Basico/Nivel Basico Exercicios-index.html"><h5>Nível Básico<br />
+            <span> Começo do aprendizado </span>
+          </h5></a>
+          <p class="card-text">“Com o intuito de ensinar o básico de inglês.” </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="https://www.freepnglogos.com/uploads/number-2-png/number-2-number-two-svg-png-icon-download-6.png" alt="">
+        <div class="card-body">
+            <a href="Exercicio Intermediario/Nivel Intermediario Exercicios-index.html"><h5> Nível Intermediário<br />
+                <span> Intermediario </span>
+              </h5></a>
+          <p class="card-text">“Com intuito de ensinar até o inglês intermediário” </p>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
+
+<style>
+  body {
+margin: 0;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 2rem;
+font-weight: 600;
+line-height: 2.5;
+color: #000000;
+background-color: #ffffff;
+height: 100vh;
+}
+.cards-container {
+position: relative;
+margin-top: 50px;
+}
+.cards-container h2 {
+font-size: 30px;
+text-align: center;
+color: #333;
+margin-bottom: 50px;
+}
+.card-body{
+text-align: center;
+margin: 50px;
+}
+.cards-container .owl-stage-outer {
+padding: 50px 0;
+}
+.cards-container .owl-nav {
+display: none;
+}
+.cards-container .owl-dots {
+text-align: center;
+}
+.cards-container .owl-dots span {
+position: relative;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+display: block;
+background: #fff;
+border: 2px solid #2B2A4C;
+margin: 0 5px;
+}
+.cards-container .owl-dots .active {
+box-shadow: none;
+}
+.cards-container .owl-dots .active span {
+background: #2B2A4C;
+box-shadow: none;
+height: 12px;
+width: 12px;
+margin-bottom: -1px;
+}
+.cards-container .card {
+background: #ffffff;
+box-shadow: 0 8px 30px -7px #c9dff0;
+margin: 0 30px;
+padding: 0 20px;
+border-radius: 20px;
+border: 0;
+}
+.cards-container .card .card-img-top {
+max-width: 100px;
+border-radius: 50%;
+margin: 15px auto 0;
+box-shadow: 0 8px 20px -4px #95abbb;
+width: 100px;
+height: 100px;
+}
+.cards-container .card h5 {
+color: #2B2A4C;
+font-size: 21px;
+line-height: 1.3;
+}
+.cards-container .card h5 span {
+font-size: 18px;
+color: #666;
+}
+.cards-container .card p {
+font-size: 20px;
+color: #555;
+padding-bottom: 15px;
+}
+.cards-container .active {
+opacity: 0.5;
+transition: all 0.3s;
+}
+.cards-container .center {
+opacity: 1;
+}
+.cards-container .center h5 {
+font-size: 24px;
+}
+.cards-container .center h5 span {
+font-size: 20px;
+}
+.cards-container .center .card-img-top {
+max-width: 200%;
+height: 130px;
+width: 130px;
+}
+@media (max-width: 767px) {
+.cards-container {
+  margin-top: 20px;
+}
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+outline: 0;
+}
+.owl-carousel button.owl-dot {
+outline: 0;
+}
+</style>
+
+
+
+<script>
+(function () {
+"use strict";
+
+var carousels = function () {
+  $(".owl-carousel1").owlCarousel({
+    loop: true,
+    center: true,
+    margin: 0,
+    responsiveClass: true,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      }
+    }
+  });
+};
+
+(function ($) {
+  carousels();
+})(jQuery);
+})();
+
+</script>
+
+<center><a href="../02-index.html">
+  <button id="b1">
+Voltar
+  </button>
+</a></center>
+
+</body>
+</html>

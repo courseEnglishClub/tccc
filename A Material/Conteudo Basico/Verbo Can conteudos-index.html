@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Verbo Can em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>O Verbo Can em Inglês</h1>
+        <p>Aprenda a usar o verbo "can" e suas aplicações!</p>
+    </header>
+    <div class="container">
+        <h2>Uso do Verbo Can</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estrutura</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Can + verbo base (afirmativa)</td>
+                    <td>I can swim. (Eu posso nadar.)</td>
+                    <td><button onclick="toggleInfo('canAffirmativeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Can + verbo base (negativa)</td>
+                    <td>I cannot (can't) swim. (Eu não posso nadar.)</td>
+                    <td><button onclick="toggleInfo('canNegativeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Can + verbo base (interrogativa)</td>
+                    <td>Can you swim? (Você pode nadar?)</td>
+                    <td><button onclick="toggleInfo('canInterrogativeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Can + verbo base (habilidade)</td>
+                    <td>She can speak three languages. (Ela pode falar três idiomas.)</td>
+                    <td><button onclick="toggleInfo('canAbilityInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Can + verbo base (permissão)</td>
+                    <td>You can go outside. (Você pode sair.)</td>
+                    <td><button onclick="toggleInfo('canPermissionInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Can + verbo base (possibilidade)</td>
+                    <td>It can rain tomorrow. (Pode chover amanhã.)</td>
+                    <td><button onclick="toggleInfo('canPossibilityInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="canAffirmativeInfo" class="info">Usamos "can" para afirmar que temos a capacidade de fazer algo.</div>
+        <div id="canNegativeInfo" class="info">Usamos "cannot" (ou "can't") para negar a capacidade de fazer algo.</div>
+        <div id="canInterrogativeInfo" class="info">Para fazer perguntas sobre a capacidade, usamos "can" no início da frase.</div>
+        <div id="canAbilityInfo" class="info">"Can" é frequentemente usado para descrever habilidades ou competências.</div>
+        <div id="canPermissionInfo" class="info">"Can" pode ser usado para dar ou pedir permissão.</div>
+        <div id="canPossibilityInfo" class="info">"Can" também expressa possibilidade em um determinado contexto.</div>
+
+        <h2>Dicas para Aprender sobre o Verbo Can</h2>
+        <ul>
+            <li>Pratique a conjugação do verbo em diferentes tempos e contextos.</li>
+            <li>Crie frases usando "can" para descrever suas habilidades.</li>
+            <li>Use o verbo em perguntas e negativas para reforçar a aprendizagem.</li>
+            <li>Converse com amigos em inglês utilizando "can" para descrever o que vocês podem ou não podem fazer.</li>
+        </ul>
+    </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Basico-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dados Pessoais em Inglês</h1>
+        <p>Aprenda a apresentar seus dados pessoais em inglês!</p>
+    </header>
+    <div class="container">
+        <h2>Vocabulário de Dados Pessoais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Termo em Inglês</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Nome</td>
+                    <td>My name is John. (Meu nome é John.)</td>
+                    <td><button onclick="toggleInfo('nameInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>Idade</td>
+                    <td>I am 25 years old. (Eu tenho 25 anos.)</td>
+                    <td><button onclick="toggleInfo('ageInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Endereço</td>
+                    <td>I live at 123 Main Street. (Eu moro na Rua Principal, 123.)</td>
+                    <td><button onclick="toggleInfo('addressInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>Número de Telefone</td>
+                    <td>My phone number is 555-1234. (Meu número de telefone é 555-1234.)</td>
+                    <td><button onclick="toggleInfo('phoneInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Email</td>
+                    <td>You can reach me at john@example.com. (Você pode me contatar em john@example.com.)</td>
+                    <td><button onclick="toggleInfo('emailInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>Data de Nascimento</td>
+                    <td>My birthday is on January 1st. (Meu aniversário é em 1º de janeiro.)</td>
+                    <td><button onclick="toggleInfo('dobInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>Nacionalidade</td>
+                    <td>I am Brazilian. (Eu sou brasileiro.)</td>
+                    <td><button onclick="toggleInfo('nationalityInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Ocupação</td>
+                    <td>I work as a teacher. (Eu trabalho como professor.)</td>
+                    <td><button onclick="toggleInfo('occupationInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>Estado Civil</td>
+                    <td>I am single. (Eu sou solteiro.)</td>
+                    <td><button onclick="toggleInfo('maritalInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Gênero</td>
+                    <td>I am a male. (Eu sou masculino.)</td>
+                    <td><button onclick="toggleInfo('genderInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>Hobbies</td>
+                    <td>My hobbies are reading and traveling. (Meus hobbies são ler e viajar.)</td>
+                    <td><button onclick="toggleInfo('hobbiesInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>Cidade</td>
+                    <td>I live in São Paulo. (Eu moro em São Paulo.)</td>
+                    <td><button onclick="toggleInfo('cityInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>Estado</td>
+                    <td>I am from California. (Eu sou da Califórnia.)</td>
+                    <td><button onclick="toggleInfo('stateInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>País</td>
+                    <td>I live in Brazil. (Eu moro no Brasil.)</td>
+                    <td><button onclick="toggleInfo('countryInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="nameInfo" class="info">O nome é a forma como você é identificado. É importante ao se apresentar a alguém.</div>
+        <div id="ageInfo" class="info">A idade é o número de anos que você viveu. Normalmente, é um dos primeiros dados que você compartilha.</div>
+        <div id="addressInfo" class="info">O endereço é a localização onde você vive. Inclui o nome da rua, número, cidade e estado.</div>
+        <div id="phoneInfo" class="info">O número de telefone é usado para contatar você por chamadas. Pode ser um número fixo ou celular.</div>
+        <div id="emailInfo" class="info">O email é um meio de comunicação digital. É usado para enviar mensagens e documentos.</div>
+        <div id="dobInfo" class="info">A data de nascimento é o dia em que você nasceu. É comum usá-la para identificação.</div>
+        <div id="nationalityInfo" class="info">A nacionalidade indica de qual país você é originário. Isso pode ser importante em várias situações.</div>
+        <div id="occupationInfo" class="info">A ocupação é a sua profissão ou o que você faz para ganhar a vida. É um dado comum em apresentações.</div>
+        <div id="maritalInfo" class="info">O estado civil informa se você é solteiro, casado, divorciado, etc. Isso pode ser relevante em contextos sociais.</div>
+        <div id="genderInfo" class="info">O gênero indica se você é masculino, feminino ou não binário. É uma parte importante da identidade de uma pessoa.</div>
+        <div id="hobbiesInfo" class="info">Os hobbies são atividades que você gosta de fazer no seu tempo livre. Eles ajudam a conhecer melhor a pessoa.</div>
+        <div id="cityInfo" class="info">A cidade é onde você vive. É comum mencionar a cidade em conversas e apresentações.</div>
+        <div id="stateInfo" class="info">O estado é uma divisão de um país. Pode ser relevante mencionar, especialmente em grandes países.</div>
+        <div id="countryInfo" class="info">O país é a nação onde você vive ou é cidadão. É uma informação básica em muitas situações.</div>
+
+        <h2>Dicas para Apresentar Dados Pessoais</h2>
+        <p>Considere as seguintes dicas ao apresentar seus dados pessoais:</p>
+        <ul>
+            <li>Use frases simples e diretas.</li>
+            <li>Pratique sua apresentação em voz alta para ganhar confiança.</li>
+            <li>Esteja preparado para responder perguntas sobre seus dados.</li>
+            <li>Aprenda a usar os dados em contexto, como em formulários ou conversas.</li>
+        </ul>
+    </div>
+
+    <footer>
+      <br>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+        <br>
+    </footer>
+</body>
+</html>

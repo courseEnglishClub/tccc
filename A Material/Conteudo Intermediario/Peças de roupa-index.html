@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peças de Roupa</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Peças de Roupa</h1>
+  </header>
+  <div class="container">
+    <h2>Lista de Peças de Roupa Comuns</h2>
+    <p>Abaixo estão algumas peças de roupa comuns em inglês, com suas traduções e exemplos de uso.</p>
+
+    <table>
+      <tr>
+        <th>Peça de Roupa (Inglês)</th>
+        <th>Tradução</th>
+        <th>Exemplo</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>T-shirt</td>
+        <td>Camiseta</td>
+        <td>I love wearing a t-shirt in the summer.</td>
+        <td><button onclick="toggleInfo('tshirtInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Jeans</td>
+        <td>Calça Jeans</td>
+        <td>He prefers to wear jeans every day.</td>
+        <td><button onclick="toggleInfo('jeansInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Dress</td>
+        <td>Vestido</td>
+        <td>She wore a beautiful dress to the party.</td>
+        <td><button onclick="toggleInfo('dressInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Skirt</td>
+        <td>Saia</td>
+        <td>A skirt is perfect for warm weather.</td>
+        <td><button onclick="toggleInfo('skirtInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Jacket</td>
+        <td>Jaqueta</td>
+        <td>He put on a jacket because it was cold outside.</td>
+        <td><button onclick="toggleInfo('jacketInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="tshirtInfo" class="info">A "t-shirt" é uma camiseta leve e geralmente de algodão, ideal para climas quentes.</div>
+    <div id="jeansInfo" class="info">"Jeans" são calças feitas de denim, conhecidas por serem duráveis e confortáveis.</div>
+    <div id="dressInfo" class="info">Um "dress" é uma peça única de roupa feminina que cobre o corpo e pode ter vários estilos e comprimentos.</div>
+    <div id="skirtInfo" class="info">Uma "skirt" é uma peça de roupa feminina que envolve a parte inferior do corpo, podendo ter diferentes comprimentos e estilos.</div>
+    <div id="jacketInfo" class="info">Uma "jacket" é uma peça de roupa externa que geralmente é usada para se proteger do frio ou do vento.</div>
+
+    <h2>Dicas de Moda</h2>
+    <ul>
+      <li><strong>Combine cores</strong>: Ao escolher roupas, tente combinar cores que harmonizem entre si.</li>
+      <li><strong>Considere o clima</strong>: Escolha suas peças de acordo com o clima do dia.</li>
+      <li><strong>Conforto é chave</strong>: Sempre opte por roupas que sejam confortáveis para você.</li>
+      <li><strong>Experimente diferentes estilos</strong>: Não tenha medo de experimentar novas combinações e estilos!</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbos Contínuos em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+        button {
+            background-color: #60338a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #4a2673;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Verbos Contínuos em Inglês</h1>
+        <p>Aprenda sobre os verbos contínuos e como usá-los corretamente!</p>
+    </header>
+    <div class="container">
+        <h2>O que são Verbos Contínuos?</h2>
+        <p>Os verbos contínuos, ou verbos em forma contínua (ou progressiva), são usados para descrever ações que estão ocorrendo no momento. Eles são formados pelo verbo "to be" + verbo principal com a terminação <strong>-ing</strong>.</p>
+
+        <h2>Formação dos Verbos Contínuos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pessoa</th>
+                    <th>Forma do Verbo</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I</td>
+                    <td>am + verb + ing</td>
+                    <td>I am studying. (Eu estou estudando.)</td>
+                    <td><button onclick="toggleInfo('iInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>He/She/It</td>
+                    <td>is + verb + ing</td>
+                    <td>She is reading. (Ela está lendo.)</td>
+                    <td><button onclick="toggleInfo('heSheInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>You/We/They</td>
+                    <td>are + verb + ing</td>
+                    <td>They are playing. (Eles estão jogando.)</td>
+                    <td><button onclick="toggleInfo('youWeTheyInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="iInfo" class="info">A forma contínua é usada para descrever ações que estão acontecendo agora, no momento.</div>
+        <div id="heSheInfo" class="info">Quando usamos 'is', estamos nos referindo a uma única pessoa ou coisa realizando a ação.</div>
+        <div id="youWeTheyInfo" class="info">A forma 'are' é utilizada para se referir a mais de uma pessoa ou para a segunda pessoa do singular.</div>
+
+        <h2>Exemplos de Verbos Contínuos</h2>
+        <ul>
+            <li>I am eating lunch. (Eu estou almoçando.)</li>
+            <li>They are watching a movie. (Eles estão assistindo a um filme.)</li>
+            <li>He is playing soccer. (Ele está jogando futebol.)</li>
+            <li>We are having a meeting. (Nós estamos tendo uma reunião.)</li>
+        </ul>
+
+        <h2>Uso dos Verbos Contínuos</h2>
+        <ul>
+            <li>Descrever ações que estão acontecendo agora.</li>
+            <li>Falar sobre planos futuros. Exemplo: "I am meeting my friend tomorrow." (Eu vou encontrar meu amigo amanhã.)</li>
+            <li>Descrever ações temporárias. Exemplo: "She is living in London for a year." (Ela está morando em Londres por um ano.)</li>
+        </ul>
+
+        <h2>Dicas para usar Verbos Contínuos</h2>
+        <ul>
+            <li>Pratique conjugando os verbos com as diferentes formas do verbo "to be".</li>
+            <li>Ouça e repita diálogos que usam o tempo contínuo.</li>
+            <li>Tente escrever frases sobre o que você está fazendo no momento.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <br>
+        <center><a href="Nivel Intermediario-index.html">
+          <button>Voltar</button>
+        </a></center>
+          <br>
+        
+      </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gênero na Língua</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Gênero na Língua</h1>
+  </header>
+  <div class="container">
+    <h2>O que é Gênero?</h2>
+    <p>Gênero se refere à classificação de substantivos e adjetivos em masculino, feminino e neutro. Essa classificação pode influenciar a forma como as palavras são usadas em frases.</p>
+
+    <h2>Gênero Masculino</h2>
+    <p>Substantivos e adjetivos no gênero masculino geralmente terminam em consoantes ou nas vogais <strong>-o</strong>.</p>
+    <table>
+      <tr>
+        <th>Palavra</th>
+        <th>Tradução</th>
+        <th>Exemplo</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Menino</td>
+        <td>Boy</td>
+        <td>O menino está jogando.</td>
+        <td><button onclick="toggleInfo('boyInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Alto</td>
+        <td>Tall</td>
+        <td>Ele é alto.</td>
+        <td><button onclick="toggleInfo('tallInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="boyInfo" class="info">"Menino" é um substantivo masculino que se refere a uma criança do sexo masculino.</div>
+    <div id="tallInfo" class="info">"Alto" é um adjetivo masculino que descreve altura, usado para homens ou objetos.</div>
+
+    <h2>Gênero Feminino</h2>
+    <p>Substantivos e adjetivos no gênero feminino geralmente terminam em <strong>-a</strong>.</p>
+    <table>
+      <tr>
+        <th>Palavra</th>
+        <th>Tradução</th>
+        <th>Exemplo</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Menina</td>
+        <td>Girl</td>
+        <td>A menina está brincando.</td>
+        <td><button onclick="toggleInfo('girlInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Alta</td>
+        <td>Tall</td>
+        <td>Ela é alta.</td>
+        <td><button onclick="toggleInfo('tallFeminineInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="girlInfo" class="info">"Menina" é um substantivo feminino que se refere a uma criança do sexo feminino.</div>
+    <div id="tallFeminineInfo" class="info">"Alta" é um adjetivo feminino que descreve altura, usado para mulheres ou objetos.</div>
+
+    <h2>Gênero Neutro</h2>
+    <p>O gênero neutro é menos comum em português, mas é importante em algumas línguas e contextos. Em português, algumas expressões podem ser consideradas neutras.</p>
+    <table>
+      <tr>
+        <th>Palavra</th>
+        <th>Tradução</th>
+        <th>Exemplo</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Estudante</td>
+        <td>Student</td>
+        <td>O estudante está estudando.</td>
+        <td><button onclick="toggleInfo('studentInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="studentInfo" class="info">"Estudante" é um substantivo neutro que pode se referir a qualquer gênero, dependendo do contexto.</div>
+
+    <h2>Dicas de Uso</h2>
+    <ul>
+      <li>Identifique o gênero dos substantivos e adjetivos para usar corretamente em suas frases.</li>
+      <li>Pratique criando frases utilizando palavras de diferentes gêneros.</li>
+      <li>Preste atenção em como o gênero pode influenciar o significado e a estrutura das frases.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

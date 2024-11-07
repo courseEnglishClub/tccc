@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses e Estações do Ano em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Meses e Estações do Ano em Inglês</h1>
+        <p>Aprenda os meses e as estações do ano em inglês!</p>
+    </header>
+    <div class="container">
+        <h2>Vocabulário de Meses e Estações</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês em Inglês</th>
+                    <th>Tradução</th>
+                    <th>Estação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>Janeiro</td>
+                    <td>Verão</td>
+                    <td><button onclick="toggleInfo('januaryInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>Fevereiro</td>
+                    <td>Verão</td>
+                    <td><button onclick="toggleInfo('februaryInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>Março</td>
+                    <td>Outono</td>
+                    <td><button onclick="toggleInfo('marchInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td>Abril</td>
+                    <td>Outono</td>
+                    <td><button onclick="toggleInfo('aprilInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>Maio</td>
+                    <td>Outono</td>
+                    <td><button onclick="toggleInfo('mayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td>Junho</td>
+                    <td>Inverno</td>
+                    <td><button onclick="toggleInfo('juneInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Julho</td>
+                    <td>Inverno</td>
+                    <td><button onclick="toggleInfo('julyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>Agosto</td>
+                    <td>Inverno</td>
+                    <td><button onclick="toggleInfo('augustInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>Setembro</td>
+                    <td>Primavera</td>
+                    <td><button onclick="toggleInfo('septemberInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>Outubro</td>
+                    <td>Primavera</td>
+                    <td><button onclick="toggleInfo('octoberInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>Novembro</td>
+                    <td>Primavera</td>
+                    <td><button onclick="toggleInfo('novemberInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>Dezembro</td>
+                    <td>Verão</td>
+                    <td><button onclick="toggleInfo('decemberInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="januaryInfo" class="info">Janeiro é o primeiro mês do ano e é parte do verão no hemisfério sul.</div>
+        <div id="februaryInfo" class="info">Fevereiro é o segundo mês do ano e tem 28 ou 29 dias.</div>
+        <div id="marchInfo" class="info">Março é o terceiro mês do ano e marca o início do outono no hemisfério sul.</div>
+        <div id="aprilInfo" class="info">Abril é o quarto mês do ano e é conhecido por suas chuvas.</div>
+        <div id="mayInfo" class="info">Maio é o quinto mês do ano e é uma transição do outono para o inverno.</div>
+        <div id="juneInfo" class="info">Junho é o sexto mês do ano e marca o início do inverno no hemisfério sul.</div>
+        <div id="julyInfo" class="info">Julho é o sétimo mês do ano e é um mês frio no hemisfério sul.</div>
+        <div id="augustInfo" class="info">Agosto é o oitavo mês do ano e é frequentemente o mês mais frio.</div>
+        <div id="septemberInfo" class="info">Setembro é o nono mês do ano e marca o início da primavera.</div>
+        <div id="octoberInfo" class="info">Outubro é o décimo mês do ano e é conhecido por suas flores.</div>
+        <div id="novemberInfo" class="info">Novembro é o décimo primeiro mês do ano e é a transição para o verão.</div>
+        <div id="decemberInfo" class="info">Dezembro é o último mês do ano e marca o início do verão no hemisfério sul.</div>
+
+        <h2>Dicas para Aprender Meses e Estações</h2>
+        <ul>
+            <li>Associe cada mês a uma estação e a uma atividade típica dessa época.</li>
+            <li>Crie um calendário em inglês e escreva as traduções embaixo.</li>
+            <li>Pratique a pronúncia em voz alta e use os meses em frases.</li>
+            <li>Tente fazer uma lista das suas atividades favoritas em cada estação.</li>
+        </ul>
+    </div>
+
+    <footer>
+      <br>
+      <center><a href="Nivel Basico-index.html">
+        <button>Voltar</button>
+      </a></center>
+        <br> 
+    </footer>
+</body>
+</html>

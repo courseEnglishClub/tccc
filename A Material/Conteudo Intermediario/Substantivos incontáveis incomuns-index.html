@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substantivos Incontáveis em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        .tips {
+            margin-top: 2em;
+            background-color: #e7f0ff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Substantivos Incontáveis em Inglês</h1>
+        <p>Aprenda a usar substantivos que não podem ser contados!</p>
+    </header>
+    <div class="container">
+        <h2>O que são Substantivos Incontáveis?</h2>
+        <p>Substantivos incontáveis são aqueles que não podem ser contados individualmente. Eles representam coisas que não podem ser separadas em unidades. Exemplos incluem líquidos, materiais e conceitos.</p>
+
+        <h2>Exemplos de Substantivos Incontáveis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Substantivo Incontável</th>
+                    <th>Exemplo em Inglês</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Water</td>
+                    <td>Can I have some water? (Posso pegar um pouco de água?)</td>
+                    <td><button onclick="toggleInfo('waterInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Rice</td>
+                    <td>I bought rice for dinner. (Eu comprei arroz para o jantar.)</td>
+                    <td><button onclick="toggleInfo('riceInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Information</td>
+                    <td>I need more information. (Eu preciso de mais informações.)</td>
+                    <td><button onclick="toggleInfo('infoInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Money</td>
+                    <td>He saved a lot of money. (Ele economizou muito dinheiro.)</td>
+                    <td><button onclick="toggleInfo('moneyInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Advice</td>
+                    <td>She gave me good advice. (Ela me deu um bom conselho.)</td>
+                    <td><button onclick="toggleInfo('adviceInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Furniture</td>
+                    <td>This furniture is new. (Este móvel é novo.)</td>
+                    <td><button onclick="toggleInfo('furnitureInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                    <td>I love listening to music. (Eu adoro ouvir música.)</td>
+                    <td><button onclick="toggleInfo('musicInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Advice</td>
+                    <td>Can you give me some advice? (Você pode me dar algum conselho?)</td>
+                    <td><button onclick="toggleInfo('adviceInfo2')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Traffic</td>
+                    <td>The traffic was heavy this morning. (O trânsito estava intenso esta manhã.)</td>
+                    <td><button onclick="toggleInfo('trafficInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Knowledge</td>
+                    <td>He has a lot of knowledge about history. (Ele tem muito conhecimento sobre história.)</td>
+                    <td><button onclick="toggleInfo('knowledgeInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Weather</td>
+                    <td>The weather is nice today. (O tempo está agradável hoje.)</td>
+                    <td><button onclick="toggleInfo('weatherInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>Homework</td>
+                    <td>I have a lot of homework to do. (Eu tenho muita lição de casa para fazer.)</td>
+                    <td><button onclick="toggleInfo('homeworkInfo')">O que significa?</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="waterInfo" class="info">Refere-se ao líquido essencial para a vida.</div>
+        <div id="riceInfo" class="info">Um alimento básico em muitas culturas.</div>
+        <div id="infoInfo" class="info">Dados ou conhecimentos sobre um assunto.</div>
+        <div id="moneyInfo" class="info">Um meio de troca ou pagamento.</div>
+        <div id="adviceInfo" class="info">Sugestões ou recomendações sobre o que fazer.</div>
+        <div id="furnitureInfo" class="info">Itens móveis que decoram um espaço.</div>
+        <div id="musicInfo" class="info">Arte composta de sons e ritmos.</div>
+        <div id="adviceInfo2" class="info">Sugestões ou recomendações sobre o que fazer.</div>
+        <div id="trafficInfo" class="info">Movimento de veículos em uma área.</div>
+        <div id="knowledgeInfo" class="info">Informação ou entendimento sobre um assunto.</div>
+        <div id="weatherInfo" class="info">Condições atmosféricas em um determinado momento.</div>
+        <div id="homeworkInfo" class="info">Tarefas escolares dadas para serem feitas em casa.</div>
+
+        <h2>Dicas para Usar Substantivos Incontáveis</h2>
+        <div class="tips">
+            <ul>
+                <li><strong>Não use números:</strong> Não diga "two waters"; use "a glass of water".</li>
+                <li><strong>Use palavras como "some" e "much":</strong> Para falar sobre quantidades. Exemplo: "I need some information."</li>
+                <li><strong>Evite artigos indefinidos:</strong> Não diga "a rice"; use "rice" diretamente.</li>
+                <li><strong>Pratique em contexto:</strong> Crie frases com substantivos incontáveis que você usa no dia a dia.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        <center><a href="Nivel Intermediario-index.html">Voltar</a></center>
+        <br>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

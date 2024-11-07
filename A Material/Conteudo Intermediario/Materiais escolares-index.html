@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materiais Escolares</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Materiais Escolares</h1>
+  </header>
+  <div class="container">
+    <h2>Lista de Materiais Escolares</h2>
+    <p>Abaixo está uma lista de materiais escolares comuns, suas traduções e exemplos de uso.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Material (Inglês)</th>
+          <th>Tradução</th>
+          <th>Exemplo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pencil</td>
+          <td>Lápis</td>
+          <td>I need a pencil to write.</td>
+          <td><button onclick="toggleInfo('pencilInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Notebook</td>
+          <td>Caderno</td>
+          <td>I use a notebook to take notes.</td>
+          <td><button onclick="toggleInfo('notebookInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Eraser</td>
+          <td>Apagador</td>
+          <td>The eraser helps to fix mistakes.</td>
+          <td><button onclick="toggleInfo('eraserInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Backpack</td>
+          <td>Bolsa</td>
+          <td>I carry my books in a backpack.</td>
+          <td><button onclick="toggleInfo('backpackInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Ruler</td>
+          <td>Regua</td>
+          <td>The ruler is used to measure.</td>
+          <td><button onclick="toggleInfo('rulerInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Calculator</td>
+          <td>Calculadora</td>
+          <td>I use a calculator for math.</td>
+          <td><button onclick="toggleInfo('calculatorInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Scissors</td>
+          <td>Tesoura</td>
+          <td>Scissors are used for cutting paper.</td>
+          <td><button onclick="toggleInfo('scissorsInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Glue</td>
+          <td>Cola</td>
+          <td>I need glue for my art project.</td>
+          <td><button onclick="toggleInfo('glueInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Marker</td>
+          <td>Caneta</td>
+          <td>Markers are great for coloring.</td>
+          <td><button onclick="toggleInfo('markerInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Folder</td>
+          <td>Pasta</td>
+          <td>I keep my papers in a folder.</td>
+          <td><button onclick="toggleInfo('folderInfo')">Mais Informações</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="pencilInfo" class="info">O "pencil" é uma ferramenta de escrita que pode ser apagada, ideal para rascunhos.</div>
+    <div id="notebookInfo" class="info">Um "notebook" é usado para anotações e organização de matérias escolares.</div>
+    <div id="eraserInfo" class="info">Um "eraser" é usado para apagar marcas feitas por lápis.</div>
+    <div id="backpackInfo" class="info">Uma "backpack" é utilizada para carregar materiais escolares e pessoais.</div>
+    <div id="rulerInfo" class="info">Uma "ruler" é uma ferramenta de medição e também pode ser usada para desenhar linhas retas.</div>
+    <div id="calculatorInfo" class="info">Uma "calculator" é usada para realizar operações matemáticas rapidamente.</div>
+    <div id="scissorsInfo" class="info">As "scissors" são usadas para cortar papel e outros materiais.</div>
+    <div id="glueInfo" class="info">A "glue" é uma substância adesiva que une materiais.</div>
+    <div id="markerInfo" class="info">Os "markers" são utilizados para escrever ou colorir, disponíveis em várias cores.</div>
+    <div id="folderInfo" class="info">Uma "folder" é usada para organizar e proteger papéis e documentos.</div>
+
+    <h2>Dicas sobre Materiais Escolares</h2>
+    <ul>
+      <li><strong>Organização</strong>: Mantenha seus materiais organizados para facilitar o acesso durante as aulas.</li>
+      <li><strong>Manutenção</strong>: Cuide dos seus materiais para que durem mais tempo.</li>
+      <li><strong>Listas de Materiais</strong>: Antes do início do ano letivo, verifique a lista de materiais que a escola fornece.</li>
+      <li><strong>Customização</strong>: Personalize seu material para torná-lo único e divertido.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

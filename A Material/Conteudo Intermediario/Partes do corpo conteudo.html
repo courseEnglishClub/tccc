@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes do Corpo Humano em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Partes do Corpo Humano em Inglês</h1>
+        <p>Aprenda as principais partes do corpo humano em inglês!</p>
+    </header>
+    <div class="container">
+        <h2>Vocabulário de Partes do Corpo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Termo em Inglês</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Head</td>
+                    <td>Cabeça</td>
+                    <td>I have a headache. (Estou com dor de cabeça.)</td>
+                    <td><button onclick="toggleInfo('headInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Eye</td>
+                    <td>Olho</td>
+                    <td>I see with my eyes. (Eu vejo com meus olhos.)</td>
+                    <td><button onclick="toggleInfo('eyeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Ear</td>
+                    <td>Ouvido</td>
+                    <td>My ears are ringing. (Meus ouvidos estão zumbindo.)</td>
+                    <td><button onclick="toggleInfo('earInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Nose</td>
+                    <td>Nariz</td>
+                    <td>I smell with my nose. (Eu cheiro com meu nariz.)</td>
+                    <td><button onclick="toggleInfo('noseInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Mouth</td>
+                    <td>Boca</td>
+                    <td>Open your mouth wide. (Abra bem a boca.)</td>
+                    <td><button onclick="toggleInfo('mouthInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Neck</td>
+                    <td>Coleira</td>
+                    <td>I wear a necklace around my neck. (Eu uso um colar no meu pescoço.)</td>
+                    <td><button onclick="toggleInfo('neckInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Shoulder</td>
+                    <td>Ombro</td>
+                    <td>My shoulder hurts. (Meu ombro dói.)</td>
+                    <td><button onclick="toggleInfo('shoulderInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Arm</td>
+                    <td>Braço</td>
+                    <td>I raised my arm. (Eu levantei meu braço.)</td>
+                    <td><button onclick="toggleInfo('armInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Hand</td>
+                    <td> mão</td>
+                    <td>I waved my hand. (Eu acenei com a mão.)</td>
+                    <td><button onclick="toggleInfo('handInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Finger</td>
+                    <td>Dedo</td>
+                    <td>I hurt my finger. (Eu machuquei meu dedo.)</td>
+                    <td><button onclick="toggleInfo('fingerInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Chest</td>
+                    <td>Peito</td>
+                    <td>He has a strong chest. (Ele tem um peito forte.)</td>
+                    <td><button onclick="toggleInfo('chestInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Leg</td>
+                    <td>Perna</td>
+                    <td>I ran with my legs. (Eu corri com minhas pernas.)</td>
+                    <td><button onclick="toggleInfo('legInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Foot</td>
+                    <td>Pé</td>
+                    <td>I stepped on my foot. (Eu pisei no meu pé.)</td>
+                    <td><button onclick="toggleInfo('footInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Back</td>
+                    <td>Costas</td>
+                    <td>My back is sore. (Minhas costas estão doloridas.)</td>
+                    <td><button onclick="toggleInfo('backInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Stomach</td>
+                    <td>Estômago</td>
+                    <td>I have a stomach ache. (Estou com dor de estômago.)</td>
+                    <td><button onclick="toggleInfo('stomachInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Knee</td>
+                    <td>Joelho</td>
+                    <td>I injured my knee. (Eu machuquei meu joelho.)</td>
+                    <td><button onclick="toggleInfo('kneeInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="headInfo" class="info">A cabeça é a parte superior do corpo humano, onde estão os olhos, o nariz e a boca.</div>
+        <div id="eyeInfo" class="info">Os olhos são os órgãos da visão e são fundamentais para perceber o ambiente.</div>
+        <div id="earInfo" class="info">Os ouvidos são os órgãos da audição e ajudam a equilibrar o corpo.</div>
+        <div id="noseInfo" class="info">O nariz é responsável pelo olfato e também é a entrada para o sistema respiratório.</div>
+        <div id="mouthInfo" class="info">A boca é a abertura do corpo usada para comer e falar.</div>
+        <div id="neckInfo" class="info">O pescoço conecta a cabeça ao tronco e contém estruturas importantes, como a traqueia e a artéria carótida.</div>
+        <div id="shoulderInfo" class="info">Os ombros são as articulações que conectam os braços ao tronco.</div>
+        <div id="armInfo" class="info">Os braços são as extremidades superiores do corpo humano, usados para manipulação e suporte.</div>
+        <div id="handInfo" class="info">As mãos são usadas para pegar e segurar objetos, e possuem cinco dedos cada.</div>
+        <div id="fingerInfo" class="info">Os dedos são as partes da mão que ajudam na destreza e na manipulação de objetos.</div>
+        <div id="chestInfo" class="info">O peito abriga órgãos vitais, como o coração e os pulmões.</div>
+        <div id="legInfo" class="info">As pernas são as extremidades inferiores do corpo, usadas para locomoção.</div>
+        <div id="footInfo" class="info">Os pés são a base do corpo humano e ajudam na caminhada.</div>
+        <div id="backInfo" class="info">As costas suportam o corpo e protegem a coluna vertebral.</div>
+        <div id="stomachInfo" class="info">O estômago é um órgão do sistema digestivo responsável pela digestão dos alimentos.</div>
+        <div id="kneeInfo" class="info">O joelho é a articulação que conecta a parte superior da perna à parte inferior.</div>
+
+        <h2>Dicas para Aprender as Partes do Corpo</h2>
+        <ul>
+            <li>Associe as partes do corpo a imagens ou desenhos para facilitar a memorização.</li>
+            <li>Use flashcards com as palavras em inglês e suas traduções para praticar.</li>
+            <li>Pratique a pronúncia em voz alta, usando exemplos em frases.</li>
+            <li>Experimente descrever seu próprio corpo em inglês para reforçar o aprendizado.</li>
+        </ul>
+    </div>
+
+    <footer>
+      <br>
+      <center><a href="Nivel Intermediario-index.html">Voltar</a></center>
+      <br>
+  </footer>
+</body>
+</html>

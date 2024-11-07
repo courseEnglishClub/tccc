@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membros da Família em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Membros da Família em Inglês</h1>
+        <p>Aprenda os nomes dos membros da família e como usá-los!</p>
+    </header>
+    <div class="container">
+        <h2>Vocabulário dos Membros da Família</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Inglês</th>
+                    <th>Português</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Father</td>
+                    <td>Pai</td>
+                    <td>My father is a doctor. (Meu pai é médico.)</td>
+                    <td><button onclick="toggleInfo('fatherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Mother</td>
+                    <td>Mãe</td>
+                    <td>Her mother is a teacher. (A mãe dela é professora.)</td>
+                    <td><button onclick="toggleInfo('motherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Brother</td>
+                    <td>Irmão</td>
+                    <td>I have one brother. (Eu tenho um irmão.)</td>
+                    <td><button onclick="toggleInfo('brotherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Sister</td>
+                    <td>Irmã</td>
+                    <td>My sister loves music. (Minha irmã ama música.)</td>
+                    <td><button onclick="toggleInfo('sisterInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Grandfather</td>
+                    <td>Avô</td>
+                    <td>My grandfather tells great stories. (Meu avô conta histórias incríveis.)</td>
+                    <td><button onclick="toggleInfo('grandfatherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Grandmother</td>
+                    <td>Avó</td>
+                    <td>Her grandmother is very kind. (A avó dela é muito gentil.)</td>
+                    <td><button onclick="toggleInfo('grandmotherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Aunt</td>
+                    <td>Tia</td>
+                    <td>My aunt lives in another city. (Minha tia mora em outra cidade.)</td>
+                    <td><button onclick="toggleInfo('auntInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Uncle</td>
+                    <td>Tio</td>
+                    <td>His uncle is a chef. (O tio dele é chefe.)</td>
+                    <td><button onclick="toggleInfo('uncleInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Cousin</td>
+                    <td>Primo/prima</td>
+                    <td>My cousin is my best friend. (Meu primo é meu melhor amigo.)</td>
+                    <td><button onclick="toggleInfo('cousinInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="fatherInfo" class="info">O pai é a figura masculina dos pais. Ele pode ser biológico, adotivo ou de criação.</div>
+        <div id="motherInfo" class="info">A mãe é a figura feminina dos pais. Assim como o pai, ela pode ser biológica, adotiva ou de criação.</div>
+        <div id="brotherInfo" class="info">O irmão é um filho masculino dos mesmos pais. Você pode ter vários irmãos.</div>
+        <div id="sisterInfo" class="info">A irmã é uma filha feminina dos mesmos pais. Assim como os irmãos, você pode ter várias irmãs.</div>
+        <div id="grandfatherInfo" class="info">O avô é o pai de um dos seus pais. Ele pode ser biológico ou adotivo.</div>
+        <div id="grandmotherInfo" class="info">A avó é a mãe de um dos seus pais. Ela também pode ser biológica ou adotiva.</div>
+        <div id="auntInfo" class="info">A tia é a irmã de um dos seus pais ou a esposa de um tio. Ela pode ser próxima ou distante.</div>
+        <div id="uncleInfo" class="info">O tio é o irmão de um dos seus pais ou o marido de uma tia. Assim como a tia, ele pode ser próximo ou distante.</div>
+        <div id="cousinInfo" class="info">Os primos são os filhos dos seus tios e tias. Eles podem ser do mesmo sexo ou de sexos diferentes.</div>
+
+        <h2>Dicas para Aprender</h2>
+        <p>Para memorizar os membros da família, considere as seguintes dicas:</p>
+        <ul>
+            <li>Faça flashcards com os nomes em inglês e português.</li>
+            <li>Pratique falando sobre sua própria família em inglês.</li>
+            <li>Crie uma árvore genealógica e nomeie cada membro em inglês.</li>
+            <li>Assista a vídeos ou leia histórias que mencionem famílias para contextualizar o vocabulário.</li>
+        </ul>
+    </div>
+
+    <footer>
+      <br>
+      <center><a href="Nivel Intermediario-index.html">Voltar</a></center>
+      <br>
+  </footer>
+</body>
+</html>

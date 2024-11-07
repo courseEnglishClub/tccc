@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêneros de Filmes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            margin-bottom: 1em;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .genre {
+            background-color: #e7e7e7;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 1em 0;
+        }
+        .separator {
+            height: 1px;
+            background-color: #60338a;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+        button {
+            background-color: #60338a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Gêneros de Filmes</h1>
+        <p>Descubra os diferentes gêneros de filmes em inglês e aprenda suas características!</p>
+    </header>
+    <div class="container">
+        <h2>O que são Gêneros de Filmes?</h2>
+        <p>
+            Gêneros de filmes são categorias que ajudam a classificar filmes com base em seu conteúdo, estilo e narrativa.
+            Conhecer os gêneros é importante para entender as expectativas e temas que podem ser abordados em um filme.
+        </p>
+        <div class="separator"></div>
+
+        <h2>Principais Gêneros de Filmes</h2>
+
+        <div class="genre">
+            <strong>Action (Ação)</strong>
+            <p>Filmes de ação são caracterizados por sequências intensas de movimento e aventura.</p>
+            <p>Exemplo: "Mad Max: Fury Road".</p>
+            <button onclick="toggleInfo('actionInfo')">Mais Informações</button>
+        </div>
+        <div id="actionInfo" class="info" style="display:none;">
+            <p>Normalmente, esses filmes incluem perseguições, lutas e eventos explosivos.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="genre">
+            <strong>Comedy (Comédia)</strong>
+            <p>Filmes de comédia visam provocar risadas e divertir o público.</p>
+            <p>Exemplo: "Superbad".</p>
+            <button onclick="toggleInfo('comedyInfo')">Mais Informações</button>
+        </div>
+        <div id="comedyInfo" class="info" style="display:none;">
+            <p>Esses filmes muitas vezes incluem humor leve, situações engraçadas e diálogos engraçados.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="genre">
+            <strong>Drama (Drama)</strong>
+            <p>Filmes de drama exploram emoções e conflitos humanos profundos.</p>
+            <p>Exemplo: "The Shawshank Redemption".</p>
+            <button onclick="toggleInfo('dramaInfo')">Mais Informações</button>
+        </div>
+        <div id="dramaInfo" class="info" style="display:none;">
+            <p>Normalmente, esses filmes focam em personagens complexos e situações realistas.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="genre">
+            <strong>Horror (Terror)</strong>
+            <p>Filmes de terror são feitos para provocar medo e suspense no público.</p>
+            <p>Exemplo: "The Conjuring".</p>
+            <button onclick="toggleInfo('horrorInfo')">Mais Informações</button>
+        </div>
+        <div id="horrorInfo" class="info" style="display:none;">
+            <p>Esses filmes frequentemente incluem elementos sobrenaturais ou criaturas assustadoras.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="genre">
+            <strong>Romance (Romance)</strong>
+            <p>Filmes de romance focam em histórias de amor e relacionamentos.</p>
+            <p>Exemplo: "The Notebook".</p>
+            <button onclick="toggleInfo('romanceInfo')">Mais Informações</button>
+        </div>
+        <div id="romanceInfo" class="info" style="display:none;">
+            <p>Esses filmes geralmente exploram as complexidades do amor e das emoções humanas.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="genre">
+            <strong>Science Fiction (Ficção Científica)</strong>
+            <p>Filmes de ficção científica exploram temas futuristas e tecnológicos.</p>
+            <p>Exemplo: "Inception".</p>
+            <button onclick="toggleInfo('sciFiInfo')">Mais Informações</button>
+        </div>
+        <div id="sciFiInfo" class="info" style="display:none;">
+            <p>Esses filmes muitas vezes incluem viagem no tempo, alienígenas ou novas tecnologias.</p>
+        </div>
+
+        <div class="separator"></div>
+    </div>
+
+    <footer>
+        <br>
+        <center><a href="Nivel Intermediario-index.html">
+          <button>Voltar</button>
+        </a></center>
+          <br>
+        
+      </footer>
+</body>
+</html>

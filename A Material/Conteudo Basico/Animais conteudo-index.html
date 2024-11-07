@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animais</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+  .filter {
+    margin-bottom: 1em;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+
+  function filterAnimals() {
+    const filter = document.getElementById('animalFilter').value;
+    const rows = document.querySelectorAll('table tbody tr');
+
+    rows.forEach(row => {
+      if (filter === 'all' || row.cells[0].innerText === filter) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Animais</h1>
+  </header>
+  <div class="container">
+    <h2>Lista de Animais por Categoria</h2>
+    <p>Use o filtro abaixo para selecionar a categoria de animais.</p>
+
+    <div class="filter">
+      <label for="animalFilter">Filtrar por categoria:</label>
+      <select id="animalFilter" onchange="filterAnimals()">
+        <option value="all">Todos</option>
+        <option value="Mamíferos">Mamíferos</option>
+        <option value="Réptil">Réptil</option>
+        <option value="Aves">Aves</option>
+        <option value="Peixes">Peixes</option>
+        <option value="Insetos">Insetos</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Animal (Inglês)</th>
+          <th>Tradução</th>
+          <th>Exemplo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Dog</td>
+          <td>Cachorro</td>
+          <td>The dog is barking.</td>
+          <td><button onclick="toggleInfo('dogInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Cat</td>
+          <td>Gato</td>
+          <td>The cat is sleeping.</td>
+          <td><button onclick="toggleInfo('catInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Elephant</td>
+          <td>Elefante</td>
+          <td>The elephant is huge.</td>
+          <td><button onclick="toggleInfo('elephantInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Horse</td>
+          <td>Cavalo</td>
+          <td>The horse is galloping.</td>
+          <td><button onclick="toggleInfo('horseInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Dolphin</td>
+          <td>Golfinho</td>
+          <td>The dolphin is jumping out of the water.</td>
+          <td><button onclick="toggleInfo('dolphinInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Rabbit</td>
+          <td>Coelho</td>
+          <td>The rabbit is hopping.</td>
+          <td><button onclick="toggleInfo('rabbitInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Mamíferos</td>
+          <td>Giraffe</td>
+          <td>Girafa</td>
+          <td>The giraffe is eating leaves from a tall tree.</td>
+          <td><button onclick="toggleInfo('giraffeInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Réptil</td>
+          <td>Snake</td>
+          <td>Serpente</td>
+          <td>The snake is slithering.</td>
+          <td><button onclick="toggleInfo('snakeInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Réptil</td>
+          <td>Lizard</td>
+          <td>Lagarto</td>
+          <td>The lizard is basking in the sun.</td>
+          <td><button onclick="toggleInfo('lizardInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Réptil</td>
+          <td>Turtle</td>
+          <td>Tartaruga</td>
+          <td>The turtle is moving slowly.</td>
+          <td><button onclick="toggleInfo('turtleInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Réptil</td>
+          <td>Crocodile</td>
+          <td>Crocodilo</td>
+          <td>The crocodile is lying in the water.</td>
+          <td><button onclick="toggleInfo('crocodileInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Aves</td>
+          <td>Parrot</td>
+          <td>Papagaio</td>
+          <td>The parrot is talking.</td>
+          <td><button onclick="toggleInfo('parrotInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Aves</td>
+          <td>Eagle</td>
+          <td>Águia</td>
+          <td>The eagle is flying high.</td>
+          <td><button onclick="toggleInfo('eagleInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Aves</td>
+          <td>Penguin</td>
+          <td>Pinguim</td>
+          <td>The penguin is waddling.</td>
+          <td><button onclick="toggleInfo('penguinInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Aves</td>
+          <td>Owl</td>
+          <td>Coruja</td>
+          <td>The owl is hooting at night.</td>
+          <td><button onclick="toggleInfo('owlInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Aves</td>
+          <td>Sparrow</td>
+          <td>Pardal</td>
+          <td>The sparrow is singing in the tree.</td>
+          <td><button onclick="toggleInfo('sparrowInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Peixes</td>
+          <td>Goldfish</td>
+          <td>Peixe Dourado</td>
+          <td>The goldfish is swimming in the bowl.</td>
+          <td><button onclick="toggleInfo('goldfishInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Peixes</td>
+          <td>Shark</td>
+          <td>Tubarão</td>
+          <td>The shark is a powerful predator.</td>
+          <td><button onclick="toggleInfo('sharkInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Peixes</td>
+          <td>Salmon</td>
+          <td>Salmão</td>
+          <td>The salmon swims upstream to spawn.</td>
+          <td><button onclick="toggleInfo('salmonInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Peixes</td>
+          <td>Tuna</td>
+          <td>Atum</td>
+          <td>The tuna is fast and agile.</td>
+          <td><button onclick="toggleInfo('tunaInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Insetos</td>
+          <td>Butterfly</td>
+          <td>Borboleta</td>
+          <td>The butterfly is beautiful.</td>
+          <td><button onclick="toggleInfo('butterflyInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Insetos</td>
+          <td>Ant</td>
+          <td>Formiga</td>
+          <td>The ant is carrying food.</td>
+          <td><button onclick="toggleInfo('antInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Insetos</td>
+          <td>Bee</td>
+          <td>Abelha</td>
+          <td>The bee is buzzing around flowers.</td>
+          <td><button onclick="toggleInfo('beeInfo')">Mais Informações</button></td>
+        </tr>
+        <tr>
+          <td>Insetos</td>
+          <td>Ladybug</td>
+          <td>Catarina</td>
+          <td>The ladybug is on the leaf.</td>
+          <td><button onclick="toggleInfo('ladybugInfo')">Mais Informações</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="dogInfo" class="info">O "dog" é conhecido como o melhor amigo do homem, é um animal de estimação leal e amigável.</div>
+    <div id="catInfo" class="info">O "cat" é um animal independente e adorado como animal de estimação em todo o mundo.</div>
+    <div id="elephantInfo" class="info">O "elephant" é o maior mamífero terrestre, conhecido por sua memória excepcional.</div>
+    <div id="horseInfo" class="info">O "horse" é um animal de trabalho importante e é usado em esportes e transporte.</div>
+    <div id="dolphinInfo" class="info">O "dolphin" é conhecido por sua inteligência e habilidades acrobáticas.</div>
+    <div id="rabbitInfo" class="info">O "rabbit" é um animal herbívoro que é popular como animal de estimação e também em zoológicos.</div>
+    <div id="giraffeInfo" class="info">A "giraffe" é conhecida por seu pescoço longo e manchas distintas.</div>
+    <div id="snakeInfo" class="info">A "snake" é um réptil que se move sem pernas e pode ser venenosa.</div>
+    <div id="lizardInfo" class="info">Os "lizards" são répteis que variam em tamanho e cor, sendo comuns em muitos habitats.</div>
+    <div id="turtleInfo" class="info">As "turtles" são conhecidas por sua carapaça dura e sua longevidade.</div>
+    <div id="crocodileInfo" class="info">Os "crocodiles" são grandes répteis semi-aquáticos conhecidos por sua ferocidade.</div>
+    <div id="parrotInfo" class="info">Os "parrots" são aves conhecidas por sua capacidade de imitar sons e palavras humanas.</div>
+    <div id="eagleInfo" class="info">As "eagles" são aves de rapina com uma visão excepcional, capazes de caçar presas de grande distância.</div>
+    <div id="penguinInfo" class="info">Os "penguins" são aves que não voam e são conhecidas por seu habitat frio e sua maneira de andar.</div>
+    <div id="owlInfo" class="info">As "owls" são aves noturnas que são conhecidas por sua habilidade de caçar no escuro.</div>
+    <div id="sparrowInfo" class="info">Os "sparrows" são aves pequenas e comuns em muitas áreas urbanas e rurais.</div>
+    <div id="goldfishInfo" class="info">Os "goldfish" são populares como animais de estimação e são conhecidos por suas cores vibrantes.</div>
+    <div id="sharkInfo" class="info">Os "sharks" são peixes predadores, conhecidos por sua força e agilidade no oceano.</div>
+    <div id="salmonInfo" class="info">Os "salmon" são conhecidos por suas migrações de desova em água doce.</div>
+    <div id="tunaInfo" class="info">Os "tunas" são peixes de água salgada conhecidos por sua velocidade e valor comercial.</div>
+    <div id="butterflyInfo" class="info">As "butterflies" são insetos que passam por uma metamorfose, tornando-se belas criaturas coloridas.</div>
+    <div id="antInfo" class="info">As "ants" são insetos sociais que vivem em colônias e trabalham em equipe para sobreviver.</div>
+    <div id="beeInfo" class="info">As "bees" são essenciais para a polinização e a produção de mel.</div>
+    <div id="ladybugInfo" class="info">As "ladybugs" são benéficas para os jardins, pois ajudam a controlar pragas.</div>
+
+    <h2>Dicas sobre Animais</h2>
+    <ul>
+      <li><strong>Respeite a vida selvagem</strong>: Nunca se aproxime de animais selvagens sem conhecimento.</li>
+      <li><strong>Cuidar de animais de estimação</strong>: Forneça amor, alimento e cuidados adequados.</li>
+      <li><strong>Aprenda sobre diferentes espécies</strong>: Cada animal tem seu próprio habitat e comportamento.</li>
+      <li><strong>Visite zoológicos ou aquários</strong>: Aprenda sobre animais de diferentes partes do mundo.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Basico-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br> 
+  </footer>
+  </body>
+  </html>

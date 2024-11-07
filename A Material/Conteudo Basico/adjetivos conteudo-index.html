@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjetivos em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+        button {
+            background-color: #60338a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #4a2673;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Adjetivos em Inglês</h1>
+        <p>Aprenda sobre os adjetivos e como usá-los!</p>
+    </header>
+    <div class="container">
+        <h2>Lista de Adjetivos Comuns</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Adjetivo em Inglês</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Happy</td>
+                    <td>Feliz</td>
+                    <td>I am happy. (Eu estou feliz.)</td>
+                    <td><button onclick="toggleInfo('happyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Sad</td>
+                    <td>Triste</td>
+                    <td>She is sad. (Ela está triste.)</td>
+                    <td><button onclick="toggleInfo('sadInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Beautiful</td>
+                    <td>Bonito(a)</td>
+                    <td>The flowers are beautiful. (As flores são bonitas.)</td>
+                    <td><button onclick="toggleInfo('beautifulInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Big</td>
+                    <td>Grande</td>
+                    <td>This house is big. (Esta casa é grande.)</td>
+                    <td><button onclick="toggleInfo('bigInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>Pequeno(a)</td>
+                    <td>My dog is small. (Meu cachorro é pequeno.)</td>
+                    <td><button onclick="toggleInfo('smallInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Fast</td>
+                    <td>Rápido(a)</td>
+                    <td>The car is fast. (O carro é rápido.)</td>
+                    <td><button onclick="toggleInfo('fastInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Slow</td>
+                    <td>Devagar</td>
+                    <td>The turtle is slow. (A tartaruga é devagar.)</td>
+                    <td><button onclick="toggleInfo('slowInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Hot</td>
+                    <td>Quente</td>
+                    <td>It is hot today. (Está quente hoje.)</td>
+                    <td><button onclick="toggleInfo('hotInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Cold</td>
+                    <td>Frio(a)</td>
+                    <td>It is cold outside. (Está frio lá fora.)</td>
+                    <td><button onclick="toggleInfo('coldInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Smart</td>
+                    <td>Inteligente</td>
+                    <td>She is smart. (Ela é inteligente.)</td>
+                    <td><button onclick="toggleInfo('smartInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Kind</td>
+                    <td>Gentil</td>
+                    <td>He is kind. (Ele é gentil.)</td>
+                    <td><button onclick="toggleInfo('kindInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Brave</td>
+                    <td>Corajoso(a)</td>
+                    <td>The brave soldier fought hard. (O soldado corajoso lutou bravamente.)</td>
+                    <td><button onclick="toggleInfo('braveInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Friendly</td>
+                    <td>Amigável</td>
+                    <td>She has a friendly smile. (Ela tem um sorriso amigável.)</td>
+                    <td><button onclick="toggleInfo('friendlyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Funny</td>
+                    <td>Engraçado(a)</td>
+                    <td>He is a funny person. (Ele é uma pessoa engraçada.)</td>
+                    <td><button onclick="toggleInfo('funnyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Lazy</td>
+                    <td>Preguiçoso(a)</td>
+                    <td>He is too lazy to work. (Ele é muito preguiçoso para trabalhar.)</td>
+                    <td><button onclick="toggleInfo('lazyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Rich</td>
+                    <td>Rico(a)</td>
+                    <td>They are rich. (Eles são ricos.)</td>
+                    <td><button onclick="toggleInfo('richInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Poor</td>
+                    <td>Pobre</td>
+                    <td>She grew up poor. (Ela cresceu pobre.)</td>
+                    <td><button onclick="toggleInfo('poorInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Clean</td>
+                    <td>Limpo(a)</td>
+                    <td>The room is clean. (O quarto está limpo.)</td>
+                    <td><button onclick="toggleInfo('cleanInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Dirty</td>
+                    <td>Sujo(a)</td>
+                    <td>The floor is dirty. (O chão está sujo.)</td>
+                    <td><button onclick="toggleInfo('dirtyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Bright</td>
+                    <td>Brilhante</td>
+                    <td>The sun is bright. (O sol está brilhante.)</td>
+                    <td><button onclick="toggleInfo('brightInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Dark</td>
+                    <td>Escuro</td>
+                    <td>It is dark outside. (Está escuro lá fora.)</td>
+                    <td><button onclick="toggleInfo('darkInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="happyInfo" class="info">O adjetivo "happy" é usado para descrever um estado emocional positivo.</div>
+        <div id="sadInfo" class="info">"Sad" descreve um estado emocional negativo ou uma sensação de perda.</div>
+        <div id="beautifulInfo" class="info">"Beautiful" é usado para descrever algo que é esteticamente agradável.</div>
+        <div id="bigInfo" class="info">"Big" refere-se ao tamanho, indicando algo maior que o normal.</div>
+        <div id="smallInfo" class="info">"Small" indica um tamanho menor que o normal.</div>
+        <div id="fastInfo" class="info">"Fast" descreve algo que se move rapidamente.</div>
+        <div id="slowInfo" class="info">"Slow" indica uma velocidade reduzida.</div>
+        <div id="hotInfo" class="info">"Hot" é usado para descrever temperaturas elevadas.</div>
+        <div id="coldInfo" class="info">"Cold" refere-se a temperaturas baixas.</div>
+        <div id="smartInfo" class="info">"Smart" é usado para descrever alguém que é inteligente ou astuto.</div>
+        <div id="kindInfo" class="info">"Kind" descreve uma pessoa que é gentil e atenciosa.</div>
+        <div id="braveInfo" class="info">"Brave" se refere a alguém que demonstra coragem.</div>
+        <div id="friendlyInfo" class="info">"Friendly" é usado para descrever alguém que é amigável e acolhedor.</div>
+        <div id="funnyInfo" class="info">"Funny" descreve algo ou alguém que provoca risos.</div>
+        <div id="lazyInfo" class="info">"Lazy" é usado para descrever alguém que evita trabalho ou esforço.</div>
+        <div id="richInfo" class="info">"Rich" refere-se a pessoas que têm muitos bens ou dinheiro.</div>
+        <div id="poorInfo" class="info">"Poor" descreve pessoas com poucos recursos financeiros.</div>
+        <div id="cleanInfo" class="info">"Clean" é usado para descrever algo livre de sujeira ou poluição.</div>
+        <div id="dirtyInfo" class="info">"Dirty" refere-se a algo que está sujo ou não limpo.</div>
+        <div id="brightInfo" class="info">"Bright" é usado para descrever luz intensa ou cor vibrante.</div>
+        <div id="darkInfo" class="info">"Dark" descreve a ausência de luz ou cor apagada.</div>
+
+        <h2>Dicas para Usar Adjetivos</h2>
+        <ul>
+            <li>Adjetivos geralmente vêm antes do substantivo. Exemplo: "a beautiful day" (um dia bonito).</li>
+            <li>Pratique combinando adjetivos com substantivos.</li>
+            <li>Tente criar frases descritivas usando diferentes adjetivos.</li>
+        </ul>
+    </div>
+
+  
+    <footer>
+        <br>
+        <center><a href="Nivel Basico-index.html">
+          <button>Voltar</button>
+        </a></center>
+          <br> 
+      </footer>
+
+</body>
+</html>

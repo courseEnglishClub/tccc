@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estampas de Roupas</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Estampas de Roupas</h1>
+  </header>
+  <div class="container">
+    <h2>Tipos de Estampas</h2>
+    <p>As estampas são elementos essenciais na moda, adicionando cor e personalidade às roupas. Elas podem transmitir diferentes estilos e emoções. Aqui estão alguns dos tipos mais comuns de estampas.</p>
+
+    <table>
+      <tr>
+        <th>Estampa</th>
+        <th>Descrição</th>
+        <th>Uso Comum</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Floral</td>
+        <td>Estampa com padrões de flores e folhagens, variando em cores e tamanhos.</td>
+        <td>Vestidos, blusas, saias e acessórios como lenços.</td>
+        <td><button onclick="toggleInfo('floralInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Geométrica</td>
+        <td>Padrões compostos por formas geométricas como triângulos, quadrados e círculos.</td>
+        <td>Camisas, saias e vestidos modernos.</td>
+        <td><button onclick="toggleInfo('geometricaInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Listrada</td>
+        <td>Estampa com linhas verticais ou horizontais, podendo variar em largura e cor.</td>
+        <td>Camisetas, vestidos, calças e pijamas.</td>
+        <td><button onclick="toggleInfo('listradaInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Poá</td>
+        <td>Padrão de bolinhas em diferentes tamanhos, geralmente em um fundo sólido.</td>
+        <td>Vestidos, blusas e acessórios como gravatas e lenços.</td>
+        <td><button onclick="toggleInfo('poaInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Animal Print</td>
+        <td>Estampa que imita pelagens de animais, como onça, zebra ou cobra.</td>
+        <td>Roupas e acessórios ousados, como jaquetas e bolsas.</td>
+        <td><button onclick="toggleInfo('animalPrintInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Abstrata</td>
+        <td>Padrões não figurativos, que podem incluir cores e formas variadas, criando uma arte visual.</td>
+        <td>Vestidos e blusas modernas, geralmente em eventos criativos.</td>
+        <td><button onclick="toggleInfo('abstrataInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="floralInfo" class="info">Estampas florais são muito populares na primavera e no verão, trazendo frescor e alegria ao visual. Elas podem variar de padrões delicados a designs vibrantes, tornando-as versáteis para diferentes ocasiões.</div>
+    <div id="geometricaInfo" class="info">Estampas geométricas são perfeitas para um look contemporâneo. Elas podem ser usadas em ambientes de trabalho ou eventos casuais, dependendo da combinação de cores e formas.</div>
+    <div id="listradaInfo" class="info">As listras podem alongar visualmente a silhueta e são uma escolha clássica na moda. Elas podem ser usadas em combinações de cores ousadas ou neutras, dependendo do efeito desejado.</div>
+    <div id="poaInfo" class="info">Estampas de poá são vintage e trazem um charme nostálgico. Elas funcionam bem em eventos casuais e formais, dependendo do estilo da peça.</div>
+    <div id="animalPrintInfo" class="info">Animal prints são ousadas e adicionam um toque selvagem ao visual. Elas são frequentemente usadas em eventos à noite e podem ser combinadas com peças sólidas para equilibrar o look.</div>
+    <div id="abstrataInfo" class="info">Estampas abstratas são ideais para aqueles que desejam se destacar e expressar sua individualidade. Elas podem ser encontradas em roupas criativas e são ótimas para eventos onde a originalidade é valorizada.</div>
+
+    <h2>Dicas para Usar Estampas</h2>
+    <ul>
+      <li><strong>Combine estampas com peças sólidas</strong>: Isso ajuda a equilibrar o visual e a evitar sobrecarga de padrões.</li>
+      <li><strong>Experimente misturar diferentes estampas</strong>: Tente combinar estampas diferentes, mas mantenha uma paleta de cores coesa para um visual harmonioso.</li>
+      <li><strong>Escolha estampas que reflitam sua personalidade</strong>: Opte por padrões que você ama e que se sintam autênticos ao seu estilo.</li>
+      <li><strong>Considere a ocasião</strong>: Use estampas mais discretas para ambientes formais e estampas mais ousadas para eventos casuais.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

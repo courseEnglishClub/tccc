@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passado do Verbo "To Be"</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Passado do Verbo "To Be"</h1>
+        <p>Aprenda a usar o verbo "to be" no passado com exemplos e explicações!</p>
+    </header>
+    <div class="container">
+        <h2>Conjugação no Passado</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pronome</th>
+                    <th>Passado do Verbo "To Be"</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I</td>
+                    <td>was</td>
+                    <td>I was happy yesterday. (Eu estava feliz ontem.)</td>
+                    <td><button onclick="toggleInfo('iWasInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>You</td>
+                    <td>were</td>
+                    <td>You were late for the meeting. (Você estava atrasado para a reunião.)</td>
+                    <td><button onclick="toggleInfo('youWereInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>He/She/It</td>
+                    <td>was</td>
+                    <td>She was at the party last night. (Ela estava na festa na noite passada.)</td>
+                    <td><button onclick="toggleInfo('heSheItWasInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>We</td>
+                    <td>were</td>
+                    <td>We were excited about the trip. (Nós estávamos animados com a viagem.)</td>
+                    <td><button onclick="toggleInfo('weWereInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>You (plural)</td>
+                    <td>were</td>
+                    <td>You were all great performers. (Vocês foram todos grandes artistas.)</td>
+                    <td><button onclick="toggleInfo('youPluralWereInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>They</td>
+                    <td>were</td>
+                    <td>They were friends for many years. (Eles eram amigos por muitos anos.)</td>
+                    <td><button onclick="toggleInfo('theyWereInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="iWasInfo" class="info">
+            <p><strong>Uso:</strong> "Was" é usado com "I" e com as terceiras pessoas do singular (he, she, it) para descrever estados ou ações que ocorreram no passado.</p>
+            <p><strong>Exemplo:</strong> "I was a student at that school." (Eu era um aluno naquela escola.)</p>
+        </div>
+        <div id="youWereInfo" class="info">
+            <p><strong>Uso:</strong> "Were" é usado com "you" (singular e plural), "we" e "they" para descrever estados ou ações no passado.</p>
+            <p><strong>Exemplo:</strong> "You were my best friend." (Você era meu melhor amigo.)</p>
+        </div>
+        <div id="heSheItWasInfo" class="info">
+            <p><strong>Uso:</strong> "Was" é usado com "he", "she" e "it" para descrever estados ou ações no passado.</p>
+            <p><strong>Exemplo:</strong> "It was a beautiful day." (Foi um dia lindo.)</p>
+        </div>
+        <div id="weWereInfo" class="info">
+            <p><strong>Uso:</strong> "Were" é usado com "we" para descrever estados ou ações no passado.</p>
+            <p><strong>Exemplo:</strong> "We were happy to see you." (Nós estávamos felizes em te ver.)</p>
+        </div>
+        <div id="youPluralWereInfo" class="info">
+            <p><strong>Uso:</strong> "Were" é usado com "you" no plural para descrever estados ou ações no passado.</p>
+            <p><strong>Exemplo:</strong> "You were all amazing!" (Vocês foram todos incríveis!)</p>
+        </div>
+        <div id="theyWereInfo" class="info">
+            <p><strong>Uso:</strong> "Were" é usado com "they" para descrever estados ou ações no passado.</p>
+            <p><strong>Exemplo:</strong> "They were at the concert." (Eles estavam no show.)</p>
+        </div>
+
+        <h2>Dicas para Aprender o Passado do Verbo "To Be"</h2>
+        <ul>
+            <li>Pratique conjugando o verbo em frases diferentes, utilizando os exemplos como base.</li>
+            <li>Use cartões de memória com frases no passado para ajudar na memorização.</li>
+            <li>Tente criar suas próprias frases no passado usando "was" e "were".</li>
+            <li>Assista a filmes ou leia livros em inglês, prestando atenção no uso do verbo "to be" no passado.</li>
+        </ul>
+    </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

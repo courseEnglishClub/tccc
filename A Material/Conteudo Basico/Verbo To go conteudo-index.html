@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbo "To Go" em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        .tips {
+            margin-top: 2em;
+            background-color: #e7f0ff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verbos "To Go" em Inglês</h1>
+        <p>Aprenda a usar esses verbos essenciais!</p>
+    </header>
+    <div class="container">
+    
+        <h2>Verbo "To Go"</h2>
+        <p>O verbo "to go" significa "ir". É usado para expressar movimento em direção a um lugar.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Forma</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I go</td>
+                    <td>I go to school. (Eu vou para a escola.)</td>
+                    <td><button onclick="toggleInfo('goIInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>You go</td>
+                    <td>You go to the market. (Você vai ao mercado.)</td>
+                    <td><button onclick="toggleInfo('goYouInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>He goes</td>
+                    <td>He goes to work. (Ele vai para o trabalho.)</td>
+                    <td><button onclick="toggleInfo('goHeInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>She goes</td>
+                    <td>She goes to the gym. (Ela vai à academia.)</td>
+                    <td><button onclick="toggleInfo('goSheInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>It goes</td>
+                    <td>It goes well. (Vai bem.)</td>
+                    <td><button onclick="toggleInfo('goItInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>We go</td>
+                    <td>We go to the park. (Nós vamos ao parque.)</td>
+                    <td><button onclick="toggleInfo('goWeInfo')">O que significa?</button></td>
+                </tr>
+                <tr>
+                    <td>They go</td>
+                    <td>They go on vacation. (Eles vão de férias.)</td>
+                    <td><button onclick="toggleInfo('goTheyInfo')">O que significa?</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+        <div id="goIInfo" class="info">Usado para indicar uma ação de ir.</div>
+        <div id="goYouInfo" class="info">Usado para a 2ª pessoa do singular e plural.</div>
+        <div id="goHeInfo" class="info">Usado para um homem na 3ª pessoa.</div>
+        <div id="goSheInfo" class="info">Usado para uma mulher na 3ª pessoa.</div>
+        <div id="goItInfo" class="info">Usado para coisas ou animais.</div>
+        <div id="goWeInfo" class="info">Usado para um grupo que inclui a pessoa que fala.</div>
+        <div id="goTheyInfo" class="info">Usado para um grupo de pessoas ou coisas.</div>
+
+        <div class="tips">
+            <h3>Dicas para Aprender</h3>
+            <ul>
+                <li>Pratique frases usando "to be" e "to go" em diferentes contextos.</li>
+                <li>Ouça músicas em inglês e preste atenção nas letras que usam esses verbos.</li>
+                <li>Converse com amigos ou em grupos de estudo para praticar.</li>
+                <li>Use flashcards para memorizar as formas do verbo.</li>
+                <li>Experimente criar histórias curtas usando esses verbos!</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <br>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+        <br>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

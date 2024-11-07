@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+        button {
+            background-color: #60338a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #4a2673;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Frutas em Inglês</h1>
+        <p>Aprenda sobre as frutas em inglês com exemplos e informações úteis!</p>
+    </header>
+    <div class="container">
+        <h2>Lista de Frutas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fruta (Inglês)</th>
+                    <th>Fruta (Português)</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>Maçã</td>
+                    <td>I eat an apple every day. (Eu como uma maçã todos os dias.)</td>
+                    <td><button onclick="toggleInfo('appleInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>Banana</td>
+                    <td>She likes bananas. (Ela gosta de bananas.)</td>
+                    <td><button onclick="toggleInfo('bananaInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>Laranja</td>
+                    <td>I drink orange juice. (Eu bebo suco de laranja.)</td>
+                    <td><button onclick="toggleInfo('orangeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Grape</td>
+                    <td>Uva</td>
+                    <td>They are eating grapes. (Eles estão comendo uvas.)</td>
+                    <td><button onclick="toggleInfo('grapeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Pineapple</td>
+                    <td>Abacaxi</td>
+                    <td>Pineapple is my favorite fruit. (Abacaxi é minha fruta favorita.)</td>
+                    <td><button onclick="toggleInfo('pineappleInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>Morango</td>
+                    <td>I love strawberry ice cream. (Eu amo sorvete de morango.)</td>
+                    <td><button onclick="toggleInfo('strawberryInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Mango</td>
+                    <td>Manga</td>
+                    <td>Mangoes are delicious. (Mangas são deliciosas.)</td>
+                    <td><button onclick="toggleInfo('mangoInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Watermelon</td>
+                    <td>Melancia</td>
+                    <td>We eat watermelon in summer. (Nós comemos melancia no verão.)</td>
+                    <td><button onclick="toggleInfo('watermelonInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Peach</td>
+                    <td>Pêssego</td>
+                    <td>She bought some peaches. (Ela comprou alguns pêssegos.)</td>
+                    <td><button onclick="toggleInfo('peachInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Lemon</td>
+                    <td>Limão</td>
+                    <td>I use lemon in my tea. (Eu uso limão no meu chá.)</td>
+                    <td><button onclick="toggleInfo('lemonInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="appleInfo" class="info">As maçãs são ricas em fibras e vitaminas. Elas vêm em várias cores, como vermelho, verde e amarelo.</div>
+        <div id="bananaInfo" class="info">As bananas são uma excelente fonte de potássio e são muito populares para lanches.</div>
+        <div id="orangeInfo" class="info">Laranjas são conhecidas por seu alto teor de vitamina C e são frequentemente usadas para fazer suco.</div>
+        <div id="grapeInfo" class="info">Uvas podem ser consumidas frescas ou usadas para fazer vinho.</div>
+        <div id="pineappleInfo" class="info">O abacaxi é tropical e doce, perfeito para sucos e sobremesas.</div>
+        <div id="strawberryInfo" class="info">Morangos são deliciosos e frequentemente usados em sobremesas e smoothies.</div>
+        <div id="mangoInfo" class="info">Mangas são suculentas e doces, muito apreciadas em várias partes do mundo.</div>
+        <div id="watermelonInfo" class="info">Melancias são refrescantes e perfeitas para o verão, cheias de água.</div>
+        <div id="peachInfo" class="info">Pêssegos são suaves e doces, ótimos para comer ao natural ou em receitas.</div>
+        <div id="lemonInfo" class="info">Limões são ácidos e frequentemente usados em bebidas e culinária.</div>
+
+        <h2>Dicas para aprender sobre frutas</h2>
+        <ul>
+            <li>Crie flashcards com os nomes das frutas em inglês e português.</li>
+            <li>Experimente incluir frutas nas suas refeições e pratique os nomes.</li>
+            <li>Assista a vídeos de culinária em inglês que incluam frutas.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+    </footer>
+</body>
+</html>

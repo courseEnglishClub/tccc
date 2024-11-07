@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direções</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1;
+  }
+  header {
+    background-color: #60338a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #60338a;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #60338a;
+    color: #fff;
+  }
+  .info {
+    display: none;
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #60338a;
+  }
+</style>
+<script>
+  function toggleInfo(id) {
+    const info = document.getElementById(id);
+    info.style.display = (info.style.display === "none") ? "block" : "none";
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Direções</h1>
+  </header>
+  <div class="container">
+    <h2>Palavras Comuns para Direções</h2>
+    <p>Quando pedimos ou damos direções, usamos algumas palavras e frases comuns. Aqui estão algumas delas.</p>
+
+    <table>
+      <tr>
+        <th>Direção (Inglês)</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Right</td>
+        <td>Movimento para a direita.</td>
+        <td>Turn right at the corner.</td>
+        <td><button onclick="toggleInfo('rightInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Left</td>
+        <td>Movimento para a esquerda.</td>
+        <td>Turn left after the traffic light.</td>
+        <td><button onclick="toggleInfo('leftInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Straight</td>
+        <td>Movimento para frente, sem mudar de direção.</td>
+        <td>Go straight for two blocks.</td>
+        <td><button onclick="toggleInfo('straightInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Stop</td>
+        <td>Ficar em um lugar ou cessar o movimento.</td>
+        <td>Stop at the red light.</td>
+        <td><button onclick="toggleInfo('stopInfo')">Mais Informações</button></td>
+      </tr>
+      <tr>
+        <td>Back</td>
+        <td>Retornar à posição anterior.</td>
+        <td>Go back to the last intersection.</td>
+        <td><button onclick="toggleInfo('backInfo')">Mais Informações</button></td>
+      </tr>
+    </table>
+
+    <div id="rightInfo" class="info">"Right" refere-se à direção oposta à esquerda e é frequentemente usada em instruções de navegação.</div>
+    <div id="leftInfo" class="info">"Left" é a direção oposta à direita e é usada para indicar onde se deve ir em uma interseção.</div>
+    <div id="straightInfo" class="info">"Straight" significa seguir em frente, sem desvios, e é uma instrução comum em direções.</div>
+    <div id="stopInfo" class="info">"Stop" é crucial para segurança em cruzamentos e sinalizações, indicando que você deve parar.</div>
+    <div id="backInfo" class="info">"Back" é usado quando se precisa voltar ao caminho anterior, geralmente em caso de erro na direção.</div>
+
+    <h2>Dicas para Pedir Direções</h2>
+    <ul>
+      <li><strong>Seja claro e específico</strong>: Ao pedir direções, mencione pontos de referência conhecidos para facilitar a compreensão.</li>
+      <li><strong>Use frases simples</strong>: Utilize frases curtas e diretas para evitar confusões.</li>
+      <li><strong>Pratique a escuta</strong>: Preste atenção às respostas e, se necessário, peça para repetir ou esclarecer.</li>
+      <li><strong>Leve um mapa</strong>: Se estiver em uma área desconhecida, ter um mapa pode ajudar a seguir as direções dadas.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

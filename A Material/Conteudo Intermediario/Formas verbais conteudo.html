@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas Verbais em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Formas Verbais em Inglês</h1>
+        <p>Entenda as principais formas verbais e como usá-las!</p>
+    </header>
+    <div class="container">
+        <h2>Principais Formas Verbais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Forma Verbal</th>
+                    <th>Uso</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Presente Simples</td>
+                    <td>Ações habituais ou estados permanentes.</td>
+                    <td>I play soccer. (Eu jogo futebol.)</td>
+                    <td><button onclick="toggleInfo('simplePresentInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Passado Simples</td>
+                    <td>Ações concluídas no passado.</td>
+                    <td>She visited her grandmother. (Ela visitou sua avó.)</td>
+                    <td><button onclick="toggleInfo('simplePastInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Futuro Simples</td>
+                    <td>Ações que ocorrerão no futuro.</td>
+                    <td>They will go to the beach. (Eles irão à praia.)</td>
+                    <td><button onclick="toggleInfo('simpleFutureInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Presente Contínuo</td>
+                    <td>Ações que estão acontecendo no momento.</td>
+                    <td>He is studying right now. (Ele está estudando agora.)</td>
+                    <td><button onclick="toggleInfo('presentContinuousInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Passado Contínuo</td>
+                    <td>Ações que estavam acontecendo em um momento específico no passado.</td>
+                    <td>We were watching a movie when it started to rain. (Estávamos assistindo a um filme quando começou a chover.)</td>
+                    <td><button onclick="toggleInfo('pastContinuousInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Futuro Contínuo</td>
+                    <td>Ações que estarão acontecendo em um momento específico no futuro.</td>
+                    <td>I will be working at 5 PM. (Estarei trabalhando às 17h.)</td>
+                    <td><button onclick="toggleInfo('futureContinuousInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Presente Perfeito</td>
+                    <td>Ações que ocorreram em um tempo indefinido antes do agora.</td>
+                    <td>She has visited Paris. (Ela visitou Paris.)</td>
+                    <td><button onclick="toggleInfo('presentPerfectInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Passado Perfeito</td>
+                    <td>Ações que ocorreram antes de outra ação no passado.</td>
+                    <td>They had finished dinner before the guests arrived. (Eles tinham terminado o jantar antes dos convidados chegarem.)</td>
+                    <td><button onclick="toggleInfo('pastPerfectInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Futuro Perfeito</td>
+                    <td>Ações que estarão concluídas antes de um momento específico no futuro.</td>
+                    <td>I will have completed the project by Friday. (Eu terei completado o projeto até sexta-feira.)</td>
+                    <td><button onclick="toggleInfo('futurePerfectInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="simplePresentInfo" class="info">
+            <p><strong>Uso:</strong> O presente simples é usado para expressar hábitos, rotinas ou fatos permanentes.</p>
+            <p><strong>Exemplo:</strong> "He plays guitar." (Ele toca guitarra.)</p>
+        </div>
+        <div id="simplePastInfo" class="info">
+            <p><strong>Uso:</strong> O passado simples é usado para descrever ações que foram concluídas em um tempo específico no passado.</p>
+            <p><strong>Exemplo:</strong> "I visited my friend last weekend." (Visitei meu amigo no último fim de semana.)</p>
+        </div>
+        <div id="simpleFutureInfo" class="info">
+            <p><strong>Uso:</strong> O futuro simples é usado para falar sobre ações que acontecerão em um tempo futuro.</p>
+            <p><strong>Exemplo:</strong> "We will travel next month." (Nós vamos viajar no próximo mês.)</p>
+        </div>
+        <div id="presentContinuousInfo" class="info">
+            <p><strong>Uso:</strong> O presente contínuo é usado para descrever ações que estão acontecendo no momento da fala.</p>
+            <p><strong>Exemplo:</strong> "They are playing outside." (Eles estão brincando lá fora.)</p>
+        </div>
+        <div id="pastContinuousInfo" class="info">
+            <p><strong>Uso:</strong> O passado contínuo é usado para descrever ações que estavam em progresso em um determinado momento no passado.</p>
+            <p><strong>Exemplo:</strong> "I was reading when you called." (Eu estava lendo quando você ligou.)</p>
+        </div>
+        <div id="futureContinuousInfo" class="info">
+            <p><strong>Uso:</strong> O futuro contínuo é usado para descrever ações que estarão em progresso em um determinado momento no futuro.</p>
+            <p><strong>Exemplo:</strong> "She will be studying at 8 PM." (Ela estará estudando às 20h.)</p>
+        </div>
+        <div id="presentPerfectInfo" class="info">
+            <p><strong>Uso:</strong> O presente perfeito é usado para falar sobre ações que aconteceram em algum momento antes do agora, sem especificar quando.</p>
+            <p><strong>Exemplo:</strong> "I have seen that movie." (Eu já vi aquele filme.)</p>
+        </div>
+        <div id="pastPerfectInfo" class="info">
+            <p><strong>Uso:</strong> O passado perfeito é usado para descrever uma ação que ocorreu antes de outra ação no passado.</p>
+            <p><strong>Exemplo:</strong> "She had left before I arrived." (Ela tinha saído antes de eu chegar.)</p>
+        </div>
+        <div id="futurePerfectInfo" class="info">
+            <p><strong>Uso:</strong> O futuro perfeito é usado para descrever uma ação que estará concluída antes de um momento específico no futuro.</p>
+            <p><strong>Exemplo:</strong> "They will have finished by noon." (Eles terão terminado até o meio-dia.)</p>
+        </div>
+
+        <h2>Dicas para Aprender Formas Verbais</h2>
+        <ul>
+            <li>Pratique escrevendo frases em diferentes tempos verbais.</li>
+            <li>Ouça músicas e preste atenção nas formas verbais usadas.</li>
+            <li>Faça exercícios de conjugação e revisão regularmente.</li>
+            <li>Converse em inglês e tente usar diferentes tempos verbais nas suas falas.</li>
+        </ul>
+    </div>
+
+  <footer>
+    <br>
+    <center><a href="Nivel Intermediario-index.html">
+      <button>Voltar</button>
+    </a></center>
+      <br>
+    
+  </footer>
+  </body>
+  </html>

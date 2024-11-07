@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade e Países em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+            border-bottom: 2px solid #60338a;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #d1c3e0;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #4b1f68;
+        }
+        button {
+            background-color: #60338a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #4a2673;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Nacionalidade e Países em Inglês</h1>
+        <p>Aprenda sobre nacionalidades e países em inglês!</p>
+    </header>
+    <div class="container">
+        <h2>Nacionalidades e Países</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Nacionalidade</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brazil</td>
+                    <td>Brazilian</td>
+                    <td>I am Brazilian. (Eu sou brasileiro.)</td>
+                    <td><button onclick="toggleInfo('brazilInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>United States</td>
+                    <td>American</td>
+                    <td>She is American. (Ela é americana.)</td>
+                    <td><button onclick="toggleInfo('usInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>Canadian</td>
+                    <td>They are Canadian. (Eles são canadenses.)</td>
+                    <td><button onclick="toggleInfo('canadaInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>French</td>
+                    <td>He is French. (Ele é francês.)</td>
+                    <td><button onclick="toggleInfo('franceInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>German</td>
+                    <td>She is German. (Ela é alemã.)</td>
+                    <td><button onclick="toggleInfo('germanyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Italy</td>
+                    <td>Italian</td>
+                    <td>I am Italian. (Eu sou italiano.)</td>
+                    <td><button onclick="toggleInfo('italyInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>Spanish</td>
+                    <td>He is Spanish. (Ele é espanhol.)</td>
+                    <td><button onclick="toggleInfo('spainInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>Japanese</td>
+                    <td>They are Japanese. (Eles são japoneses.)</td>
+                    <td><button onclick="toggleInfo('japanInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>Australian</td>
+                    <td>I am Australian. (Eu sou australiano.)</td>
+                    <td><button onclick="toggleInfo('australiaInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Chinese</td>
+                    <td>She is Chinese. (Ela é chinesa.)</td>
+                    <td><button onclick="toggleInfo('chinaInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="brazilInfo" class="info">O Brasil é um país da América do Sul, conhecido por sua cultura rica e diversidade.</div>
+        <div id="usInfo" class="info">Os Estados Unidos são um país da América do Norte, conhecido por sua influência cultural e econômica.</div>
+        <div id="canadaInfo" class="info">O Canadá é conhecido por sua natureza deslumbrante e multiculturalidade.</div>
+        <div id="franceInfo" class="info">A França é famosa por sua arte, moda e gastronomia.</div>
+        <div id="germanyInfo" class="info">A Alemanha é um país da Europa Central, conhecido por sua história e tecnologia.</div>
+        <div id="italyInfo" class="info">A Itália é famosa por sua arte, história e culinária.</div>
+        <div id="spainInfo" class="info">A Espanha é conhecida por sua cultura vibrante e história rica.</div>
+        <div id="japanInfo" class="info">O Japão é uma ilha no leste da Ásia, conhecida por sua tecnologia e cultura única.</div>
+        <div id="australiaInfo" class="info">A Austrália é conhecida por suas praias e diversidade natural.</div>
+        <div id="chinaInfo" class="info">A China é o país mais populoso do mundo, conhecido por sua história antiga e moderna.</div>
+
+        <h2>Dicas para Aprender Nacionalidades e Países</h2>
+        <ul>
+            <li>Pratique a pronúncia dos nomes dos países e nacionalidades.</li>
+            <li>Use mapas para identificar países e associá-los às suas nacionalidades.</li>
+            <li>Tente criar frases simples sobre você e suas origens.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <br>
+        <center><a href="Nivel Basico-index.html">
+          <button>Voltar</button>
+        </a></center>
+          <br> 
+      </footer>
+</body>
+</html>

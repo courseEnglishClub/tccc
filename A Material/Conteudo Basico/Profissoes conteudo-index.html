@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissões em Inglês</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4a2c6f;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #4a2c6f;
+            border-bottom: 2px solid #4a2c6f;
+            padding-bottom: 0.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #4a2c6f;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #4a2c6f;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        td:hover {
+            background-color: #e7d3ef;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #4a2c6f;
+            border-radius: 5px;
+            animation: slideIn 0.5s;
+        }
+        .tips {
+            margin-top: 2em;
+            background-color: #e7e7e7;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #4a2c6f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #2a1b4d;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Profissões em Inglês</h1>
+        <p>Descubra diferentes profissões e como usá-las em inglês!</p>
+    </header>
+    <div class="container">
+        <h2>As Profissões</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Profissão</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doctor</td>
+                    <td>Médico</td>
+                    <td>The doctor helps sick people.</td>
+                    <td><button onclick="toggleInfo('doctorInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Teacher</td>
+                    <td>Professor</td>
+                    <td>The teacher educates students.</td>
+                    <td><button onclick="toggleInfo('teacherInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Engineer</td>
+                    <td>Engenheiro</td>
+                    <td>The engineer designs buildings.</td>
+                    <td><button onclick="toggleInfo('engineerInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Chef</td>
+                    <td>Chef</td>
+                    <td>The chef cooks delicious meals.</td>
+                    <td><button onclick="toggleInfo('chefInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Nurse</td>
+                    <td>Enfermeiro</td>
+                    <td>The nurse takes care of patients.</td>
+                    <td><button onclick="toggleInfo('nurseInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Artist</td>
+                    <td>Artista</td>
+                    <td>The artist creates beautiful paintings.</td>
+                    <td><button onclick="toggleInfo('artistInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Police Officer</td>
+                    <td>Policial</td>
+                    <td>The police officer protects the community.</td>
+                    <td><button onclick="toggleInfo('policeInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Scientist</td>
+                    <td>Cientista</td>
+                    <td>The scientist conducts experiments.</td>
+                    <td><button onclick="toggleInfo('scientistInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Accountant</td>
+                    <td>Contador</td>
+                    <td>The accountant manages financial records.</td>
+                    <td><button onclick="toggleInfo('accountantInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Architect</td>
+                    <td>Arquiteto</td>
+                    <td>The architect designs buildings.</td>
+                    <td><button onclick="toggleInfo('architectInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Lawyer</td>
+                    <td>Advogado</td>
+                    <td>The lawyer defends clients in court.</td>
+                    <td><button onclick="toggleInfo('lawyerInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Mechanic</td>
+                    <td>Mecânico</td>
+                    <td>The mechanic repairs cars.</td>
+                    <td><button onclick="toggleInfo('mechanicInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Web Developer</td>
+                    <td>Desenvolvedor Web</td>
+                    <td>The web developer creates websites.</td>
+                    <td><button onclick="toggleInfo('developerInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Electrician</td>
+                    <td>Eletricista</td>
+                    <td>The electrician fixes electrical issues.</td>
+                    <td><button onclick="toggleInfo('electricianInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Farmer</td>
+                    <td>Fazendeiro</td>
+                    <td>The farmer grows crops.</td>
+                    <td><button onclick="toggleInfo('farmerInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Journalist</td>
+                    <td>Jornalista</td>
+                    <td>The journalist writes news articles.</td>
+                    <td><button onclick="toggleInfo('journalistInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Pharmacist</td>
+                    <td>Farmacêutico</td>
+                    <td>The pharmacist dispenses medication.</td>
+                    <td><button onclick="toggleInfo('pharmacistInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Veterinarian</td>
+                    <td>Veterinário</td>
+                    <td>The veterinarian cares for animals.</td>
+                    <td><button onclick="toggleInfo('veterinarianInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Pilot</td>
+                    <td>Piloto</td>
+                    <td>The pilot flies airplanes.</td>
+                    <td><button onclick="toggleInfo('pilotInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Designer</td>
+                    <td>Designer</td>
+                    <td>The designer creates visual concepts.</td>
+                    <td><button onclick="toggleInfo('designerInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="doctorInfo" class="info">Os médicos tratam doenças e ajudam a manter a saúde das pessoas.</div>
+        <div id="teacherInfo" class="info">Os professores ensinam e orientam os alunos em suas aprendizagens.</div>
+        <div id="engineerInfo" class="info">Os engenheiros projetam e constroem estruturas e sistemas.</div>
+        <div id="chefInfo" class="info">Os chefs são responsáveis pela criação e preparo de pratos em restaurantes.</div>
+        <div id="nurseInfo" class="info">Os enfermeiros assistem os médicos e cuidam dos pacientes.</div>
+        <div id="artistInfo" class="info">Os artistas expressam sua criatividade através da arte.</div>
+        <div id="policeInfo" class="info">Os policiais mantêm a ordem e protegem a sociedade.</div>
+        <div id="scientistInfo" class="info">Os cientistas fazem pesquisas para entender fenômenos naturais.</div>
+        <div id="accountantInfo" class="info">Os contadores gerenciam registros financeiros e ajudam com impostos.</div>
+        <div id="architectInfo" class="info">Os arquitetos projetam e planejam edifícios e estruturas.</div>
+        <div id="lawyerInfo" class="info">Os advogados representam clientes em processos legais.</div>
+        <div id="mechanicInfo" class="info">Os mecânicos consertam e mantêm veículos e máquinas.</div>
+        <div id="developerInfo" class="info">Os desenvolvedores web criam e mantêm sites e aplicações online.</div>
+        <div id="electricianInfo" class="info">Os eletricistas instalam e consertam sistemas elétricos.</div>
+        <div id="farmerInfo" class="info">Os fazendeiros cultivam plantas e cuidam de animais.</div>
+        <div id="journalistInfo" class="info">Os jornalistas escrevem sobre eventos e notícias atuais.</div>
+        <div id="pharmacistInfo" class="info">Os farmacêuticos fornecem medicamentos e aconselham sobre seu uso.</div>
+        <div id="veterinarianInfo" class="info">Os veterinários tratam e cuidam da saúde de animais.</div>
+        <div id="pilotInfo" class="info">Os pilotos operam aeronaves para transporte de passageiros e carga.</div>
+        <div id="designerInfo" class="info">Os designers criam conceitos visuais e gráficos.</div>
+
+        <h2>Dicas para Falar sobre Profissões</h2>
+        <div class="tips">
+            <ul>
+                <li>Use "to be" para descrever uma profissão. Exemplo: "She is a doctor."</li>
+                <li>Para perguntar sobre a profissão de alguém, use: "What do you do?"</li>
+                <li>Pratique frases que descrevem o que você faz no seu trabalho ou estudo.</li>
+                <li>Aprenda vocabulário específico da sua área para enriquecer sua conversa.</li>
+                <li>Faça uma lista das profissões que você gostaria de explorar ou aprender mais.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <br>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+        <br>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

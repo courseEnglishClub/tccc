@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da Semana em Inglês</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #60338a;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            animation: fadeIn 1s;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #60338a;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #60338a;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #60338a;
+            color: #fff;
+        }
+        td:hover {
+            background-color: #d1c4e9;
+        }
+        .info {
+            display: none;
+            margin-top: 1em;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #60338a;
+            border-radius: 5px;
+            animation: slideIn 0.5s;
+        }
+        .tips {
+            margin-top: 2em;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #60338a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = (info.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dias da Semana em Inglês</h1>
+        <p>Aprenda a usar os dias da semana!</p>
+    </header>
+    <div class="container">
+        <h2>Os Dias da Semana</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Tradução</th>
+                    <th>Exemplo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Segunda-feira</td>
+                    <td>I start my week on Monday.</td>
+                    <td><button onclick="toggleInfo('mondayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Terça-feira</td>
+                    <td>We have a meeting on Tuesday.</td>
+                    <td><button onclick="toggleInfo('tuesdayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Quarta-feira</td>
+                    <td>She has a class on Wednesday.</td>
+                    <td><button onclick="toggleInfo('wednesdayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Quinta-feira</td>
+                    <td>Thursday is my favorite day.</td>
+                    <td><button onclick="toggleInfo('thursdayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Sexta-feira</td>
+                    <td>We go out on Friday night.</td>
+                    <td><button onclick="toggleInfo('fridayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Sábado</td>
+                    <td>Saturday is for relaxing.</td>
+                    <td><button onclick="toggleInfo('saturdayInfo')">Mais Informações</button></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Domingo</td>
+                    <td>We have family time on Sunday.</td>
+                    <td><button onclick="toggleInfo('sundayInfo')">Mais Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="mondayInfo" class="info">A segunda-feira é geralmente considerada o primeiro dia da semana em muitos países.</div>
+        <div id="tuesdayInfo" class="info">A terça-feira é frequentemente associada a reuniões e trabalho produtivo.</div>
+        <div id="wednesdayInfo" class="info">Quarta-feira é conhecida como o meio da semana, muitas vezes chamado de "dia da metade".</div>
+        <div id="thursdayInfo" class="info">A quinta-feira é muitas vezes vista como o dia de preparação para o fim de semana.</div>
+        <div id="fridayInfo" class="info">Sexta-feira é conhecida por marcar o início do fim de semana e festas.</div>
+        <div id="saturdayInfo" class="info">O sábado é um dia popular para atividades de lazer e descanso.</div>
+        <div id="sundayInfo" class="info">O domingo é frequentemente reservado para o tempo em família e descanso.</div>
+
+        <h2>Dicas para Usar os Dias da Semana</h2>
+        <div class="tips">
+            <ul>
+                <li>Use "on" para se referir a dias específicos. Exemplo: "I have a test on Friday."</li>
+                <li>Para falar sobre atividades regulares, use o presente simples. Exemplo: "I go to the gym on Monday."</li>
+                <li>Quando falar sobre o futuro, use "next" ou "last" para indicar a próxima ou a última vez. Exemplo: "I will see you next Sunday."</li>
+                <li>Pratique a pronúncia dos dias da semana para melhor fluência.</li>
+                <li>Crie frases sobre sua rotina semanal usando os dias da semana para reforçar seu aprendizado.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <br>
+        <center><a href="Nivel Basico-index.html">Voltar</a></center>
+        <br>
+    </footer>
+</body>
+</html>
